@@ -1,0 +1,56 @@
+import React, {type ReactNode} from 'react';
+import {LiveError, LivePreview} from 'react-live';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import {ErrorBoundaryErrorMessageFallback} from '@docusaurus/theme-common';
+import ErrorBoundary from '@docusaurus/ErrorBoundary';
+import Translate from '@docusaurus/Translate';
+// @ts-expect-error Docusaurus fail
+import PlaygroundHeader from '@theme/Playground/Header';
+import {Provider} from 'koval-ui';
+
+import styles from './styles.module.css';
+
+function Loader() {
+  // Is it worth improving/translating?
+  // eslint-disable-next-line @docusaurus/no-untranslated-text
+  return <div>Loading...</div>;
+}
+
+function PlaygroundLivePreview(): ReactNode {
+  // No SSR for the live preview
+  // See https://github.com/facebook/docusaurus/issues/5747
+  return (
+    <BrowserOnly fallback={<Loader />}>
+      {() => (
+        <>
+          <ErrorBoundary
+            fallback={(params) => (
+              <ErrorBoundaryErrorMessageFallback {...params} />
+            )}>
+            <Provider>
+              <LivePreview />
+            </Provider>
+          </ErrorBoundary>
+          <LiveError />
+        </>
+      )}
+    </BrowserOnly>
+  );
+}
+
+export default function PlaygroundPreview(): ReactNode {
+  return (
+    <>
+      <PlaygroundHeader>
+        <Translate
+          id="theme.Playground.result"
+          description="The result label of the live codeblocks">
+          Result
+        </Translate>
+      </PlaygroundHeader>
+      <div className={styles.playgroundPreview}>
+          <PlaygroundLivePreview />
+      </div>
+    </>
+  );
+}

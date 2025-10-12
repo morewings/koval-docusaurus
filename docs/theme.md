@@ -14,13 +14,16 @@ export const App: FC = () => {
 
 ## Available themes
 
-![Hello](./images/themes.png)
+Koval ships with three themes bundled: **Podil**, **Dnipro** and **Dovzhenko**.
 
-Koval ships with two themes bundled: **Podil** (left) and **Dnipro** (right).
+:::info[Info]
+You can see and try all available themes at [Koval Storybook](https://morewings.github.io/koval-ui/). 
+There is also a [dedicated theme color palette story](https://morewings.github.io/koval-ui/?path=/docs/themes--docs).
+:::
 
 ```tsx
 import type {FC} from 'react';
-import {Provider, themeDnipro, themePodil} from 'koval-ui';
+import {Provider, themeDnipro, themePodil, themeDovzhenko} from 'koval-ui';
 
 export const App: FC = () => {
     // Theme Podil is set by default.

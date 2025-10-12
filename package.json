@@ -12,23 +12,32 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "pretty": "prettier ./src/ ./docs/ --check"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.1",
     "@docusaurus/preset-classic": "3.9.1",
     "@docusaurus/remark-plugin-npm2yarn": "^3.9.1",
+    "@docusaurus/theme-classic": "^3.9.1",
+    "@docusaurus/theme-live-codeblock": "^3.9.1",
     "@mdx-js/react": "3.1.1",
+    "@phosphor-icons/react": "^2.1.10",
+    "alias-kitchen": "^0.2.3",
     "clsx": "2.1.1",
+    "css-vars-hook": "^0.8.3",
+    "koval-ui": "^0.19.6",
     "prism-react-renderer": "2.4.1",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-live": "^4.1.8"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.1",
     "@docusaurus/tsconfig": "3.9.1",
     "@docusaurus/types": "3.9.1",
-    "typescript": "~5.6.2"
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
   },
   "browserslist": {
     "production": [

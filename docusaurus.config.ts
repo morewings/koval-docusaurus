@@ -35,6 +35,9 @@ const config: Config = {
     locales: ['en'],
   },
 
+
+  themes: ['@docusaurus/theme-live-codeblock'],
+
   presets: [
     [
       'classic',
@@ -65,13 +68,16 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', 'node_modules/koval-ui/dist/index.css'],
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
+    liveCodeBlock: {
+      playgroundPosition: 'top',
+    },
     // Replace with your project's social card
     image: 'img/social.png',
     colorMode: {
