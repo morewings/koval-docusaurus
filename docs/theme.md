@@ -1,4 +1,8 @@
-# Theme
+---
+sidebar_position: 2
+---
+
+# Apply theme
 
 Koval UI supports theming colors, sizes and fonts via **Provider** component `theme` prop.
 
@@ -17,7 +21,7 @@ export const App: FC = () => {
 Koval ships with three themes bundled: **Podil**, **Dnipro** and **Dovzhenko**.
 
 :::info[Info]
-You can see and try all available themes at [Koval Storybook](https://morewings.github.io/koval-ui/). 
+You can see and try all available themes at [Koval Storybook](https://morewings.github.io/koval-ui/).
 There is also a [dedicated theme color palette story](https://morewings.github.io/koval-ui/?path=/docs/themes--docs).
 :::
 

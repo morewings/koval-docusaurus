@@ -15,6 +15,10 @@ import {Text} from 'koval-ui';
 
 ## Component demo
 
+:::info[Info]
+All inline element styles are available as [separate components](/typography/components#inline-elements).
+:::
+
 ```jsx live
 //import {Text} from 'koval-ui';
 
@@ -22,23 +26,11 @@ function Example(props) {
   return (
     <Text>
       <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <h5>Header 5</h5>
-      <h6>Header 6</h6>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. This
         text is <a href="#">long url example</a>. Lorem Ipsum has been the industry&apos;s
         standard dummy text ever since the 1500s, when an unknown printer took a galley of
         type and scrambled it to make a type specimen book.
-      </p>
-      <p>
-        It has survived not only five centuries, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-        the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions of Lorem
-        Ipsum.
       </p>
       <p>
         This text is <a href="#">url</a>
@@ -91,43 +83,6 @@ function Example(props) {
         <dt>Owlman</dt>
         <dd>A giant owl-like creature.</dd>
       </dl>
-      <table>
-        <caption>He-Man and Skeletor facts</caption>
-        <thead>
-          <tr>
-            <th>Header content 1</th>
-            <th>Header content 2</th>
-            <th>Header content 3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Body content 1</td>
-            <td>
-              It has survived not only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged.
-            </td>
-            <td>Body content 3</td>
-          </tr>
-          <tr>
-            <td>Body content 1</td>
-            <td>Body content 2</td>
-            <td>Body content 3</td>
-          </tr>
-          <tr>
-            <td>Body content 1</td>
-            <td>Body content 2</td>
-            <td>Body content 3</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>Footer content 1</td>
-            <td>Footer content 2</td>
-            <td>Footer content 3</td>
-          </tr>
-        </tfoot>
-      </table>
       <p>
         This is meter:{' '}
         <meter value={55} min={0} low={30} high={60} max={100} optimum={50}>

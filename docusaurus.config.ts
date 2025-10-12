@@ -6,7 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Koval UI',
-  tagline: 'Koval UI is a collection of React components built for modern web browsers. Let the browser do the heavy lifting – by using its APIs. Supports column-based layout, built-in and external form validation, theming, floating components and many more. ',
+  tagline:
+    'Koval UI is a collection of React components built for modern web browsers. Let the browser do the heavy lifting – by using its APIs. Supports column-based layout, built-in and external form validation, theming, floating components and many more. ',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -35,7 +36,6 @@ const config: Config = {
     locales: ['en'],
   },
 
-
   themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
@@ -47,10 +47,8 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
-          ],
+            'https://github.com/morewings/koval-docusaurus/tree/master',
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}]],
         },
         blog: {
           showReadingTime: true,
@@ -61,7 +59,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/morewings/koval-docusaurus/tree/master',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -97,7 +95,11 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {href: 'https://morewings.github.io/koval-ui/', label: 'Storybook', position: 'right'},
+        {
+          href: 'https://morewings.github.io/koval-ui/',
+          label: 'Storybook',
+          position: 'left',
+        },
         {
           href: 'https://github.com/morewings/koval-ui',
           label: 'GitHub',
@@ -112,8 +114,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Quickstart',
+              to: '/docs/quickstart',
+            },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              href: 'https://morewings.github.io/koval-ui/',
+              label: 'Storybook'
             },
           ],
         },
@@ -122,33 +132,33 @@ const config: Config = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/koval-ui',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Koval UI Github',
+              href: 'https://github.com/morewings/koval-ui',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Product hunt',
+              href: 'https://www.producthunt.com/products/koval-ui-react-components-library',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Dima Vyshniakov',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'My links',
+              href: 'https://links.morewings.dev/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'My GitHub',
+              href: 'https://github.com/morewings',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Koval UI. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Koval UI, Dima Vyshniakov. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

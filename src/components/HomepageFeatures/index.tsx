@@ -2,51 +2,84 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import {
+  RocketLaunchIcon,
+  Icon,
+  StackIcon,
+  CodeIcon,
+  ChecksIcon,
+  LightbulbIcon,
+  FeatherIcon
+} from '@phosphor-icons/react';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Icon: Icon;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Blazing-Fast Performance',
+    Icon: RocketLaunchIcon,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Built with native browser APIs to minimize JavaScript overhead and keep your application's bundle size small and efficient.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Comprehensive Component Suite',
+    Icon: StackIcon,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A rich set of components including layouts, data tables, carousels, and a full suite of form inputs.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Modern Developer Experience',
+    Icon: CodeIcon,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Full ES Modules and TypeScript support with bundled types and out-of-the-box compatibility with modern frameworks like Next.js.
+      </>
+    ),
+  },
+  {
+    title: 'Powerful Form Handling',
+    Icon: ChecksIcon,
+    description: (
+      <>
+        Seamlessly integrates with popular libraries like react-hook-form and includes powerful built-in validation.
+      </>
+    ),
+  },
+  {
+    title: 'Accelerated Prototyping',
+    Icon: LightbulbIcon,
+    description: (
+      <>
+        Perfect for experimentation, AI interfaces, and rapidly building and testing new ideas.
+      </>
+    ),
+  },
+  {
+    title: 'Light-weight',
+    Icon: FeatherIcon,
+    description: (
+      <>
+        Supports tree-shaking with all modern bundlers. Makes minimal bundle footprint due to browser API reliance.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description, Icon}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Icon weight="duotone" size={166} className={styles.featureIcon} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
