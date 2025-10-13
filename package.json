@@ -21,6 +21,7 @@
     "@docusaurus/preset-classic": "3.9.1",
     "@docusaurus/remark-plugin-npm2yarn": "3.9.1",
     "@docusaurus/theme-classic": "3.9.1",
+    "@docusaurus/theme-common": "3.9.1",
     "@docusaurus/theme-live-codeblock": "3.9.1",
     "@mdx-js/react": "3.1.1",
     "@phosphor-icons/react": "2.1.10",
@@ -58,7 +59,8 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "core-js", "core-js-pure"
+      "core-js",
+      "core-js-pure"
     ]
   }
 }
