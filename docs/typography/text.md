@@ -16,7 +16,7 @@ import {Text} from 'koval-ui';
 ## Component demo
 
 :::info[Info]
-All inline element styles are available as [separate components](/typography/components#inline-elements).
+All inline element styles are available as [separate components](/docs/typography/components#inline-elements).
 :::
 
 ```jsx live
