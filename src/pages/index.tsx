@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/quickstart">
-            Read Koval UI docs
+            📚 Read library docs
           </Link>
         </div>
       </div>

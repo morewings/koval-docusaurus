@@ -6,8 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Koval UI',
-  tagline:
-    'Koval UI is a collection of React components built for modern web browsers. Let the browser do the heavy lifting – by using its APIs. Supports column-based layout, built-in and external form validation, theming, floating components and many more. ',
+  tagline: 'Let the browser do the work, resulting in simpler code and a more streamlined user experience.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
