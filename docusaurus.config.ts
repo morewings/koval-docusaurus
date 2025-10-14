@@ -4,7 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Koval UI',
-  tagline: 'Let the browser do the work, resulting in simpler code and a more streamlined user experience.',
+  tagline:
+    'Let the browser do the work, resulting in simpler code and a more streamlined user experience.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -37,8 +38,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/morewings/koval-docusaurus/tree/master',
+          editUrl: 'https://github.com/morewings/koval-docusaurus/tree/master',
           remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}]],
         },
         blog: {
@@ -47,14 +47,28 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/morewings/koval-docusaurus/tree/master',
+          editUrl: 'https://github.com/morewings/koval-docusaurus/tree/master',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: ['./src/css/custom.css', 'node_modules/koval-ui/dist/index.css'],
+        },
+        gtag: {
+          trackingID: 'G-EGZMC25BG3',
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
         },
       } satisfies Preset.Options,
     ],
@@ -76,7 +90,7 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: false,
       // TODO: enable when Koval dark theme ready
-      disableSwitch: true
+      disableSwitch: true,
     },
     navbar: {
       title: 'Koval UI: Developer Guide',
@@ -120,7 +134,7 @@ const config: Config = {
             },
             {
               href: 'https://morewings.github.io/koval-ui/',
-              label: 'Storybook'
+              label: 'Storybook',
             },
           ],
         },
