@@ -62,90 +62,37 @@ page](https://morewings.github.io/koval-ui/?path=/docs/components-iframe--docs).
 
 `sandboxConfig` property is responsible for managing the [sandbox permissions](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox). But instead of using flat string, Koval uses the config object.
 
-```typescript
-type SandboxConfig = {
-  /**
-   * Allows downloading files through an <a> or <area> element with the download attribute,
-   * as well as through the navigation that leads to a download of a file.
-   * This works regardless of whether the user clicked on the link,
-   * or JS code initiated it without user interaction.
-   */
-  'allow-downloads'?: boolean;
-  /**
-   * Allows for downloads to occur without a gesture from the user.
-   */
-  'allow-downloads-without-user-activation'?: boolean;
-  /**
-   * Allows the page to submit forms.
-   * If this keyword is not used, the form will be displayed as normal,
-   * but submitting it will not trigger input validation,
-   * sending data to a web server or closing a dialog.
-   */
-  'allow-forms'?: boolean;
-  /**
-   * Allows the page to open modal windows by Window.alert(),
-   * Window.confirm(), Window.print() and Window.prompt(),
-   * while opening a <dialog> is allowed regardless of this keyword.
-   * It also allows the page to receive BeforeUnloadEvent event.
-   */
-  'allow-modals'?: boolean;
-  /**
-   * Lets the resource lock the screen orientation.
-   */
-  'allow-orientation-lock'?: boolean;
-  /**
-   * Allows the page to use the Pointer Lock API.
-   */
-  'allow-pointer-lock'?: boolean;
-  /**
-   * Allows popups (like from Window.open(), target="_blank", Window.showModalDialog()).
-   * If this keyword is not used, that functionality will silently fail.
-   */
-  'allow-popups'?: boolean;
-  /**
-   * Allows a sandboxed document
-   * to open a new browsing context without forcing the sandboxing flags upon it.
-   * This will allow, for example, a third-party advertisement
-   * to be safely sandboxed without forcing the same restrictions upon the page the ad links to.
-   * If this flag is not included, a redirected page, popup window,
-   * or new tab will be subject to the same sandbox restrictions as the originating <iframe>.
-   */
-  'allow-popups-to-escape-sandbox'?: boolean;
-  /**
-   * Allows embedders to have control over whether an iframe can start a presentation session.
-   */
-  'allow-presentation'?: boolean;
-  /**
-   * If this token is not used,
-   * the resource is treated as being from a special origin that always fails the same-origin policy
-   * (potentially preventing access to data storage/cookies and some JavaScript APIs).
-   */
-  'allow-same-origin'?: boolean;
-  /**
-   * Allows the page to run scripts (but not create pop-up windows).
-   * If this keyword is not used, this operation is not allowed.
-   */
-  'allow-scripts'?: boolean;
-  /**
-   * Allows a document loaded in the <iframe>
-   * to use the Storage Access API to request access to unpartitioned cookies.
-   */
-  'allow-storage-access-by-user-activation'?: boolean;
-  /**
-   * Lets the resource navigate the top-level browsing context (the one named _top).
-   */
-  'allow-top-navigation'?: boolean;
-  /**
-   * Lets the resource navigate the top-level browsing context, but only if initiated by a user gesture.
-   */
-  'allow-top-navigation-by-user-activation'?: boolean;
-  /**
-   * Allows navigations to non-http protocols built into a browser or registered by a website.
-   * This feature is also activated by allow-popups or allow-top-navigation keyword.
-   */
-  'allow-top-navigation-to-custom-protocols'?: boolean;
-};
-```
+### Basic Permissions
+
+#### Downloads
+* `'allow-downloads'`: Enables downloading files via `a` or `area` elements with the download attribute, including programmatic downloads initiated without user interaction.
+* `'allow-downloads-without-user-activation'`: Allows downloads to occur without requiring any user gesture (click, tap, etc.).
+
+#### Forms
+* `'allow-forms'`: Permits form submissions and validation processes to function normally. Without this, forms will appear but not submit data or trigger validations.
+
+#### Modals
+* `'allow-modals'`: Enables the use of modal dialogs via `alert()`, `confirm()`, `print()` and `prompt()`. Also allows receiving `BeforeUnloadEvent` events.
+
+### Navigation Control
+
+* `'allow-orientation-lock'`: Grants permission to lock screen orientation (portrait/landscape).
+* `'allow-pointer-lock'`: Enables the Pointer Lock API for more immersive experiences.
+* `'allow-popups'`: Allows opening pop-up windows via `window.open()`, target="_blank", etc. Without this, popup attempts will silently fail.
+* `'allow-popups-to-escape-sandbox'`: Permits pop-ups to open outside the sandbox restrictions, useful for third-party content like ads linking to external sites.
+
+### Security Features
+
+* `'allow-same-origin'`: If omitted, the resource is treated as cross-origin by default (more secure). Including this allows access to same-domain resources.
+* `'allow-scripts'`: Enables JavaScript execution within the iframe (required for interactive content). Without this, scripts will be blocked.
+* `'allow-storage-access-by-user-activation'`: Allows requesting access to unpartitioned cookies via the Storage Access API after user interaction.
+
+### Advanced Options
+
+* `'allow-presentation'`: Grants control over whether the iframe can initiate presentation sessions (like slideshows).
+* `'allow-top-navigation'`: Permits navigating the top-level browsing context (the main browser tab/window). Use with caution as this weakens security.
+* `'allow-top-navigation-by-user-activation'`: Allows navigation to the top level only when initiated by a user action (more secure than full `allow-top-navigation`).
+* `'allow-top-navigation-to-custom-protocols'`: Enables navigating to non-HTTP protocols registered with the browser.
 
 ## `allow` permissions
 

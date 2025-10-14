@@ -61,6 +61,14 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: 'pre-release',
+      content:
+        'Developer guide is currently updated. Sorry for the inconvenience. Stay tuned.',
+      backgroundColor: '#fbfb49',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
     liveCodeBlock: {
       playgroundPosition: 'top',
     },
