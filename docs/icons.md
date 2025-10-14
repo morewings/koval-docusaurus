@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Prefix and suffix icons
 
 [Button](https://morewings.github.io/koval-ui/?path=/docs/components-button--docs) and [various input components](https://koval.support/inputs/inputs) support `prefix` and `suffix` props, which can be used to extend your component with icon.

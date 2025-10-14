@@ -142,7 +142,7 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Koval UI Github',
+              label: 'Koval UI Repository',
               href: 'https://github.com/morewings/koval-ui',
             },
             {
