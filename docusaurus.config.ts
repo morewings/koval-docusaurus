@@ -2,8 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: 'Koval UI',
   tagline: 'Let the browser do the work, resulting in simpler code and a more streamlined user experience.',
@@ -22,14 +20,10 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'morewings', // Usually your GitHub org/user name.
-  projectName: 'koval-docs', // Usually your repo name.
+  organizationName: 'morewings',
+  projectName: 'koval-docs',
 
   onBrokenLinks: 'throw',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -43,8 +37,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/morewings/koval-docusaurus/tree/master',
           remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}]],
@@ -55,11 +47,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/morewings/koval-docusaurus/tree/master',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -75,10 +64,11 @@ const config: Config = {
     liveCodeBlock: {
       playgroundPosition: 'top',
     },
-    // Replace with your project's social card
     image: 'img/social.png',
     colorMode: {
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
+      // TODO: enable when Koval dark theme ready
+      disableSwitch: true
     },
     navbar: {
       title: 'Koval UI: Developer Guide',
@@ -110,10 +100,10 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Developer guide',
           items: [
             {
-              label: 'Quickstart',
+              label: 'Docs',
               to: '/docs/quickstart',
             },
             {
@@ -130,12 +120,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/koval-ui',
-            },
-            {
               label: 'Koval UI Github',
               href: 'https://github.com/morewings/koval-ui',
+            },
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/koval-ui',
             },
             {
               label: 'Product hunt',

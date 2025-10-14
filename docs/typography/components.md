@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Typography components
 
 Koval UI offers a suite of components designed to ensure typography consistency and harmony across various text elements, including paragraphs, headers, lists, numbers, and tables.

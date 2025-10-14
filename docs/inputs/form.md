@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Form component
 
 The `Form` component wraps a set of input components that manage their combined values in a single state and allow to submit this data. It offers compatibility with native `HTMLFormElement`, enabling seamless integration into existing workflows.

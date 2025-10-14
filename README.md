@@ -1,41 +1,113 @@
-# Website
+# Koval UI Developer Guide Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Installation
+## Markdown features
 
-```bash
-yarn
+Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+
+## Front Matter
+
+Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+
+```text title="my-doc.md"
+// highlight-start
+---
+id: my-doc-id
+title: My document title
+description: My document description
+slug: /my-custom-url
+---
+// highlight-end
+
+## Markdown heading
+
+Markdown text with [links](./hello.md)
 ```
 
-## Local Development
+## Links
 
-```bash
-yarn start
+Regular Markdown links are supported, using url paths or relative file paths.
+
+```md
+Let's see how to [Create a page](/create-a-page).
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
+```md
+Let's see how to [Create a page](./create-a-page.md).
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+**Result:** Let's see how to [Create a page](./create-a-page.md).
 
-## Deployment
+## Images
 
-Using SSH:
+Regular Markdown images are supported.
 
-```bash
-USE_SSH=true yarn deploy
+You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
+
+```md
+![Docusaurus logo](/img/docusaurus.png)
 ```
 
-Not using SSH:
+![Docusaurus logo](/img/docusaurus.png)
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
+You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
+
+```md
+![Docusaurus logo](./img/docusaurus.png)
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Code Blocks
+
+Markdown code blocks are supported with Syntax highlighting.
+
+````md
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+````
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+
+## Admonitions
+
+Docusaurus has a special syntax to create admonitions and callouts:
+
+```markdown
+:::tip My tip
+
+Use this awesome feature option
+
+:::
+```
+
+```markdown
+:::danger Take care
+
+This action is dangerous
+
+:::
+```
+
+```markdown
+:::tip My tip
+
+Use this awesome feature option
+
+:::
+```
+
+
+```markdown
+:::danger Take care
+
+This action is dangerous
+
+:::
+```

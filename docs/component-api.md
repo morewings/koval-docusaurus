@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Component API
 
 ## HTMLElement attributes
@@ -43,4 +47,55 @@ import {Button} from 'koval-ui';
 const ref = useRef<HTMLButtonElement>(null);
 
 <Button ref={ref} />;
+```
+
+## Locale API
+
+Koval components support localization features where it's applicable.
+
+### User locale
+
+Many components support `locale` prop, which allows setting formatting according to user country standards.
+
+```jsx live
+//import {NameRegion} from 'koval-ui';
+
+function Example(props) {
+  // Will display country name in Standard Moroccan Tamazight locale
+  return <NameRegion countryCode="SE" locale="zgh-Tfng-MA" />;
+}
+```
+
+### Country codes
+
+`Flag` component uses a two-letter ISO 3166 region code.
+
+```jsx live
+//import {Flag} from 'koval-ui';
+
+function Example(props) {
+  return <Flag countryCode="DE" size={66} />;
+}
+```
+
+### Currency codes
+
+`NumberCurrency` component uses ISO 4217 currency code.
+
+```jsx live
+//import {NumberCurrency} from 'koval-ui';
+
+function Example(props) {
+  return <NumberCurrency currency="EUR" value={1234567890} />;
+}
+```
+
+### Language codes
+
+```jsx live
+//import {NameLanguage} from 'koval-ui';
+
+function Example(props) {
+  return <NameLanguage languageCode="nb" />;
+}
 ```

@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Date and time formatting
 
 `DateTime` component renders locale-aware customizable date and time strings. Component expexts `value` prop as string representing time stamp in a [simplified format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format) based on [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).

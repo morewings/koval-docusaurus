@@ -1,9 +1,14 @@
+---
+sidebar_position: 5
+---
+
+
 # Input capture API
 
 ## Input modes
 
 | Feature                | Controlled                                                                                     | Uncontrolled                                                                                                |
-| ---------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+|------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Value source**       | React state (passed via `value` or `checked`)                                                  | The browser’s internal DOM state (set once with `defaultValue` / `defaultChecked`)                          |
 | **Updating the value** | You must update the prop (usually inside an `onChange` handler) for the UI to reflect changes. | The input updates itself; you only read the value when needed (e.g., on submit).                            |
 | **Typical use‑case**   | Forms that need instant validation, conditional rendering, or integration with Redux/Context.  | Simple forms where you don’t need to track the value in React, or when you only care about the final value. |
@@ -55,18 +60,21 @@ function Example(props) {
 }
 ```
 
-## Textual input API
+## Textual capture API
 
-This type defines the props for handling callbacks with textual input elements (like `<input>` and `<textarea>`).
+This type defines the props for handling callbacks with textual input elements
+(like `InputText` and `Textarea`).
 
-- **`value?: string`**: Controls the input's value in _controlled mode_. When provided, the component manages the input's state. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#value)
-- **`defaultValue?: string`**: Sets an initial value for the input in _non-controlled mode_. The component does not manage the input's state; it uses the browser's default behavior. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#value)
-- **`disabled?: boolean`**: Disables the input, preventing user interaction. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#disabled)
-- **`readOnly?: boolean`**: Makes the input non-editable by the user, but still allows it to be selected and copied from. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/readonly)
+| Prop Name      | Type      | Description                                                              |
+|----------------|-----------|--------------------------------------------------------------------------|
+| `value`        | `string`  | Controls input value in controlled mode; component manages state         |
+| `defaultValue` | `string`  | Sets initial value in non-controlled mode; uses browser default behavior |
+| `disabled`     | `boolean` | Prevents user interaction                                                |
+| `readOnly`     | `boolean` | Makes input non-editable but still selectable                            |
 
 Use `value` for controlled components where you need to directly manage the input's state in your application logic. Use `defaultValue` for non-controlled components when you want the browser to handle the input's state internally.
 
-## Interactive input API
+## Interactive capture API
 
 :::warning[Warning]
 `value` prop serves a special purpose for [inputs of interactive
@@ -77,8 +85,10 @@ and this is reported value.
 
 This type defines the props for handling callbacks with interactive input elements.
 
-- **`value?: string`**: Provides an initial value for the checkbox. **Important:** This prop _does not_ control the checkbox's state. Use the `checked` prop to manage its checked status. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#value)
-- **`defaultChecked?: boolean`**: Sets the initial checked state for a _non-controlled_ checkbox. In this mode, the component doesn't manage the checkbox's state; it relies on the browser's default behavior. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#checked)
-- **`checked?: boolean`**: Controls the checked state of a _controlled_ checkbox. When provided, the component manages the checkbox's state directly. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#checked)
+| Prop Name        | Type      | Description                                                  |
+|------------------|-----------|--------------------------------------------------------------|
+| `value`          | `string`  | Provides an initial value (does not control checked status)  |
+| `defaultChecked` | `boolean` | Sets the initial checked state for a non-controlled checkbox |
+| `checked`        | `boolean` | Controls the checked state of a controlled checkbox          |
 
 Use `checked` to manage the checkbox’s state in your application logic (controlled components). Use `defaultChecked` for non-controlled checkboxes where you want the browser to handle the state internally.

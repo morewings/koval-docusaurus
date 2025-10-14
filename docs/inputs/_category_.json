@@ -1,6 +1,6 @@
 {
-  "label": "Inputs",
-  "position": 4,
+  "label": "Forms & Inputs",
+  "position": 5,
   "link": {
     "type": "generated-index",
     "description": "This chapter explains how to capture and validate user input."
