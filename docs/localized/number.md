@@ -131,7 +131,9 @@ See [NumberUnit story](https://morewings.github.io/koval-ui/?path=/docs/typograp
 //import {NumberUnit} from 'koval-ui';
 
 function Example(props) {
-  return <NumberUnit locale="en-US" value={123456.789} unit="petabyte" />;
+  return (
+    <NumberUnit locale="en-US" value={123456.789} unit="petabyte" unitDisplay="long" />
+  );
 }
 ```
 
@@ -161,7 +163,7 @@ function Example(props) {
       notation="scientific"
       locale="en-US"
       value={0.123456}
-      digitsConfig={{fraction: {minimum: 2}}}
+      digitsConfig={{fraction: {maximum: 2}}}
     />
   );
 }
