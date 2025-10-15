@@ -1,8 +1,8 @@
 {
-  "label": "Localized",
+  "label": "Locale-aware formatting",
   "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "This chapter explains how to render layout with Koval components."
+    "description": "Koval UI contains various components which allow to display dates, numbers, units, country and currency names localized and properly formatted."
   }
 }
