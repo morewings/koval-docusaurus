@@ -10,48 +10,40 @@ Koval UI offers a suite of components designed to ensure typography consistency 
 You can find all Koval typography components at the corresponding [Storybook chapter](https://morewings.github.io/koval-ui/?path=/docs/typography-intro--docs).
 :::
 
-## Paragraph
+## Paragraph (`P`)
 
 The Paragraph (`P`) component provides a uniform style based on the `HTMLParagraphElement`.
 
-### Import name
-
-```typescript
-import {P} from 'koval-ui';
-```
-
-### Demo
-
 ```jsx live
+//import {P} from 'koval-ui';
+
 function Example(props) {
   return (
     <>
       <P>
-        Kurazh Bazaar, the epitome of urban cool, is where vintage vibes meet modern
-        chic. Amidst the bustling streets of Kiev, this eclectic market is a haven for
-        those seeking unique finds and artisanal treasures. From retro vinyl records to
-        handcrafted jewelry, every corner of Kurazh Bazaar tells a story of creativity
-        and passion.
+        Kurazh Bazaar, the epitome of urban cool, is where vintage vibes meet modern chic.
+        Amidst the bustling streets of Kiev, this eclectic market is a haven for those
+        seeking unique finds and artisanal treasures. From retro vinyl records to
+        handcrafted jewelry, every corner of Kurazh Bazaar tells a story of creativity and
+        passion.
       </P>
       <P>
-        Picture yourself sipping on a cold brew coffee, the aroma mingling with the
-        scent of freshly baked artisanal bread. As you stroll through the bazaar, you
-        encounter a myriad of stalls offering everything from retro fashion to bespoke
-        furniture. The air is alive with the sounds of indie bands strumming their
-        guitars and the chatter of like-minded souls.
+        Picture yourself sipping on a cold brew coffee, the aroma mingling with the scent
+        of freshly baked artisanal bread. As you stroll through the bazaar, you encounter
+        a myriad of stalls offering everything from retro fashion to bespoke furniture.
+        The air is alive with the sounds of indie bands strumming their guitars and the
+        chatter of like-minded souls.
       </P>
       <P>
-        Kurazh Bazaar is more than just a market; it’s a celebration of individuality
-        and artistic expression. Here, you can lose yourself in the eclectic mix of old
-        and new, where every item has a story and every corner invites exploration.
-        Embrace the bohemian spirit and let your inner hipster thrive in this urban
-        oasis.
+        Kurazh Bazaar is more than just a market; it’s a celebration of individuality and
+        artistic expression. Here, you can lose yourself in the eclectic mix of old and
+        new, where every item has a story and every corner invites exploration. Embrace
+        the bohemian spirit and let your inner hipster thrive in this urban oasis.
       </P>
     </>
   );
 }
 ```
-
 
 :::info[Info]
 See [Paragraph story](https://morewings.github.io/koval-ui/?path=/docs/typography-paragraph--docs).
@@ -61,20 +53,14 @@ See [Paragraph story](https://morewings.github.io/koval-ui/?path=/docs/typograph
 
 Koval UI supports six header sizes, from `H1` to `H6`, allowing for flexible and consistent heading structures.
 
-### Import name
-
-```typescript
-import {H1, H2, H3, H4, H5, H6} from 'koval-ui';
-```
-
 :::info[Info]
 See [Headers story](https://morewings.github.io/koval-ui/iframe.html?args=&id=typography-header--primary&viewMode=story).
 :::
 
-
 ### Demo
 
 ```jsx live
+// import {H1, H2, H3, H4, H5, H6} from 'koval-ui';
 function Example(props) {
   return (
     <>
@@ -84,59 +70,6 @@ function Example(props) {
       <H4>Header 4</H4>
       <H5>Header 5</H5>
       <H6>Header 6</H6>
-    </>
-  );
-}
-```
-
-## Inline elements
-
-Koval UI provides consistent styling for various HTML inline elements, such as `a`, `small`, `sup` and so on.
-
-### Import names
-
-```typescript
-import {A, Strong, Sup, Sub, Small, B, Mark, Ins, I, Em, Del, Kbd, Code, S} from 'koval-ui';
-```
-:::info[Info]
-See [Inline elements story](https://morewings.github.io/koval-ui/?path=/docs/typography-inline-elements--docs).
-:::
-
-### Demo
-
-
-```jsx live
-function Example(props) {
-  return (
-    <>
-      This text is <A href="#">url</A>
-      <br />
-      This text is <B>bold</B>
-      <br />
-      This text is <Strong>strong</Strong>
-      <br />
-      This text is <I>italic</I>
-      <br />
-      This text is <Em>emphasized</Em>
-      <br />
-      This text is <Mark>marked</Mark>
-      <br />
-      This text is <Small>small</Small>
-      <br />
-      This is <S>strikethrough text</S>
-      <br />
-      This text is <Del>deleted</Del>
-      <br />
-      This text is <Ins>inserted</Ins>
-      <br />
-      This is <Sub>subscript</Sub> and <Sup>superscript</Sup>
-      <br />
-      This is <Kbd>Shift</Kbd> and <Kbd>Ctrl</Kbd>
-      <br />
-      This is <Code>code</Code>
-      <br />
-      This was the day: <DateTime value="2019-03-15T16:30:00.000Z" />
-      <br />
     </>
   );
 }
@@ -156,15 +89,11 @@ See [Lists story](https://morewings.github.io/koval-ui/?path=/docs/typography-li
 
 Each component is implemented as wrapper for `HTMLLIElements`.
 
-### Import names
-
-```tsx
-import {Ol, Ul, Dl} from 'koval-ui';
-```
-
-### Ordered list
+### Ordered list (`Ol`)
 
 ```jsx live
+// import {Ol} from 'koval-ui';
+
 function Example(props) {
   return (
     <Ol>
@@ -176,9 +105,10 @@ function Example(props) {
 }
 ```
 
-### Unordered list
+### Unordered list (`Ul`)
 
 ```jsx live
+// import {Ul} from 'koval-ui';
 function Example(props) {
   return (
     <Ul>
@@ -190,9 +120,10 @@ function Example(props) {
 }
 ```
 
-### Description list
+### Description list (`Dl`)
 
 ```jsx live
+// import {Dl} from 'koval-ui';
 function Example(props) {
   return (
     <Dl>
@@ -207,80 +138,134 @@ function Example(props) {
 }
 ```
 
-
-## Table
+## `Table`
 
 A basic Table component is available, serving as a wrapper for standard HTML table elements such as `tr`, `td`, and others.
 
 :::info[Info]
-    See [Table story](https://morewings.github.io/koval-ui/?path=/docs/typography-table--docs).
+See [Table story](https://morewings.github.io/koval-ui/?path=/docs/typography-table--docs).
 :::
 
-### Import name
-
-```typescript
-import {Table} from 'koval-ui';
-```
-
-### Demo
-
 ```jsx live
+//import {Table} from 'koval-ui';
+
 function Example(props) {
   return (
     <Table>
       <caption>He-Man and Skeletor facts</caption>
       <thead>
-      <tr>
-        <th>Header content 1</th>
-        <th>Header content 2</th>
-        <th>Header content 3</th>
-        <th>Header content 4</th>
-        <th>Header content 5</th>
-        <th>Header content 6</th>
-      </tr>
+        <tr>
+          <th>Header content 1</th>
+          <th>Header content 2</th>
+          <th>Header content 3</th>
+          <th>Header content 4</th>
+          <th>Header content 5</th>
+          <th>Header content 6</th>
+        </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>Body content 1</td>
-        <td>
-          Sip on locally brewed kombucha as you wander through stalls adorned with
-          bohemian tapestries and indie art. The air is filled with the aroma of freshly
-          ground coffee and the sound of live acoustic sets. It’s not just a market; it’s
-          a community where free spirits gather to celebrate individuality and style.
-        </td>
-        <td>Body content 3</td>
-        <td>Body content 4</td>
-        <td>Body content 5</td>
-        <td>Body content 6</td>
-      </tr>
-      <tr>
-        <td>Body content 1</td>
-        <td>Body content 2</td>
-        <td>Body content 3</td>
-        <td>Body content 4</td>
-        <td>Body content 5</td>
-        <td>Body content 6</td>
-      </tr>
-      <tr>
-        <td>Body content 1</td>
-        <td>Body content 2</td>
-        <td>Body content 3</td>
-        <td>Body content 4</td>
-        <td>Body content 5</td>
-        <td>Body content 6</td>
-      </tr>
+        <tr>
+          <td>Body content 1</td>
+          <td>
+            Sip on locally brewed kombucha as you wander through stalls adorned with
+            bohemian tapestries and indie art. The air is filled with the aroma of freshly
+            ground coffee and the sound of live acoustic sets. It’s not just a market;
+            it’s a community where free spirits gather to celebrate individuality and
+            style.
+          </td>
+          <td>Body content 3</td>
+          <td>Body content 4</td>
+          <td>Body content 5</td>
+          <td>Body content 6</td>
+        </tr>
+        <tr>
+          <td>Body content 1</td>
+          <td>Body content 2</td>
+          <td>Body content 3</td>
+          <td>Body content 4</td>
+          <td>Body content 5</td>
+          <td>Body content 6</td>
+        </tr>
+        <tr>
+          <td>Body content 1</td>
+          <td>Body content 2</td>
+          <td>Body content 3</td>
+          <td>Body content 4</td>
+          <td>Body content 5</td>
+          <td>Body content 6</td>
+        </tr>
       </tbody>
       <tfoot>
-      <tr>
-        <th>Footer content 1</th>
-        <th>Footer content 2</th>
-        <th>Footer content 3</th>
-        <th>Footer content 4</th>
-        <th>Footer content 5</th>
-        <th>Footer content 6</th>
-      </tr>
+        <tr>
+          <th>Footer content 1</th>
+          <th>Footer content 2</th>
+          <th>Footer content 3</th>
+          <th>Footer content 4</th>
+          <th>Footer content 5</th>
+          <th>Footer content 6</th>
+        </tr>
       </tfoot>
     </Table>
+  );
+}
+```
+
+## `Figure`
+
+`Figure` is a container used to display media content, such as images, along with a caption. It is typically used to group and style the media and its caption together, providing a semantic and accessible way to present visual content.
+
+### Basic demo
+
+```jsx live
+// import {Figure, Picture} from 'koval-ui';
+function Example(props) {
+  return (
+    <Figure caption="Example image">
+      <Picture width={333} height={333} src="https://picsum.photos/333/333" />
+    </Figure>
+  );
+}
+```
+
+### Surrounded with text
+
+Notice the `position` prop.
+
+```jsx live
+// import {Figure, Picture, P} from 'koval-ui';
+function Example(props) {
+  return (
+    <div>
+      <P>
+        Kurazh Bazaar, the epitome of urban cool, is where vintage vibes meet modern chic.
+        Amidst the bustling streets of Kiev, this eclectic market is a haven for those
+        seeking unique finds and artisanal treasures.
+      </P>
+      <Figure caption="Surrounded with text example" position="center">
+        <Picture width={666} height={333} src="https://picsum.photos/666/333" />
+      </Figure>
+      <P>
+        From retro vinyl records to handcrafted jewelry, every corner of Kurazh Bazaar
+        tells a story of creativity and passion.
+      </P>
+    </div>
+  );
+}
+```
+
+## `BlockQuote`
+
+BlockQuote indicates that the enclosed text is an extended quotation. It provides a styled wrapper for quotes and ability to provide an author name using `cite` tag.
+
+```jsx live
+// import {BlockQuote} from 'koval-ui';
+function Example(props) {
+  return (
+    <BlockQuote>
+      Words can be like X-rays, if you use them properly—they’ll go through anything. You
+      read and you’re pierced.
+      <cite>George Clooney</cite>
+    </BlockQuote>
   );
 }
 ```

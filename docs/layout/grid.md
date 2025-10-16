@@ -9,13 +9,37 @@ documentation](https://morewings.github.io/koval-ui/?path=/docs/layout-grid--doc
 
 Koval layout is designed to be fully responsive, ensuring that your content looks great on all devices, from mobile phones to large desktop screens.
 
-## Grid
+## `Grid`
+
+`Grid` wraps the layout and creates a base for the layout grid.
+
+### `width`
+
+type: `number | 'fluid'`
+
+Defines the container width. Accepts pixel values (e.g., 1200px) or the special value `"fluid"` to make the container fill 100% of its parent's width.
+
+### `base`
+
+type: `number`
+
+Specifies the base column count for responsive layouts (default: 12). This determines how many columns fit within the container at its maximum width.
+
+### `gap`
+
+type: `number`
+
+Sets a fixed gap in pixels between columns, creating spacing between content blocks.
+
+### `as`
+
+type: `string`
+
+Allows you to render the container using a different HTML element (e.g., `"div"`, `"section"`, etc.). Useful for semantic markup or styling purposes.
 
 :::info[Info]
 See [all Grid props](https://morewings.github.io/koval-ui/?path=/docs/layout-grid--docs#grid-props).
 :::
-
-`Grid` component serves as a wrapper. The grid **width** can be specified as a `number` or as `fluid` string, which sets the width to 100%.
 
 ### Fixed size grid
 
@@ -73,9 +97,9 @@ function Example(props) {
 }
 ```
 
-### Define column number number (aka grid base)
+### Define column number
 
-Developers can define the **number of columns** using the `base` prop, with recommended values being 12, 16, or 24. 
+Developers can define the **number of columns** using the `base` prop, with recommended values being 12, 16, or 24.
 
 ```jsx live
 function Example(props) {
@@ -180,9 +204,9 @@ See [all Row props](https://morewings.github.io/koval-ui/?path=/docs/layout-grid
 
 `Col` component creates grid column. Developers can configure **width** and **shift** of the column.
 
-### Responsiveness 
+### Responsiveness
 
-By using predefined breakpoints and t-shirt sizes (`xs`, `sm`, `md`, `lg`, `xl`), the grid layout ensures a consistent look and feel across different screen sizes. Each of them is available as a prop which accepts number of columns.
+By using predefined breakpoints and t-shirt sizes (`xs`, `sm`, `md`, `lg`, `xl`), the grid layout ensures a consistent look and feel across different screen sizes. Each of them is available as a prop which accepts a number of columns.
 
 ```jsx live
 function Example(props) {

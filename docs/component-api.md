@@ -6,25 +6,23 @@ sidebar_position: 3
 
 ## HTMLElement attributes
 
-Every component in Koval library supports following props, which mimic native HTMLComponent props. Full set of **WAI-ARIA attributes** is supported as well.
+Every component in Koval library supports the following props, which mimic native HTMLComponent props.
 
-```ts
-import type {AriaAttributes, HTMLAttributes} from 'react';
+### `aria-*: string`
 
-export type LibraryProps = AriaAttributes & {
-    id?: string;
-    /**
-     * Set native ARIA role attribute
-     * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
-     */
-    role?: HTMLAttributes<HTMLElement>['role'];
-    /**
-     * Specify additional CSS class. This allows you to use styled(Component)
-     * or the css prop in styled-components or emotion.
-     */
-    className?: HTMLAttributes<HTMLElement>['className'];
-};
-```
+A full set of **WAI-ARIA attributes** is supported. See the [full list](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes).
+
+### `id: string`
+
+Description: A unique identifier for the component, useful for accessibility and styling purposes.
+
+### `role: HTMLAttributes<HTMLElement>['role']`
+Set a native ARIA role attribute to define the component's semantic purpose. See [MDN documentation on ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) for available options.
+
+### `className: string` (optional)
+
+Add custom CSS classes to style the component using your preferred styling solution (CSS Modules, Styled Components, Emotion, etc.). This enables you to create unique visual designs while maintaining accessibility best practices.
+
 
 ## data- attributes
 
