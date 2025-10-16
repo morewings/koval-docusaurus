@@ -56,7 +56,7 @@ const config: Config = {
         theme: {
           customCss: [
             './src/css/custom.css',
-            'node_modules/koval-ui/dist/index.css',
+            // 'node_modules/koval-ui/dist/index.css',
             // 'node_modules/@fontsource-variable/rubik/index.css',
           ],
         },

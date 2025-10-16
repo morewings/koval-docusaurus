@@ -1,4 +1,5 @@
-@import '@fontsource-variable/rubik/index.css';
+/*@import '@fontsource-variable/rubik/index.css';*/
+@import '/node_modules/koval-ui/dist/index.css';
 
 /**
  * Any CSS included here will be global. The classic template
