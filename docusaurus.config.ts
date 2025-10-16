@@ -11,7 +11,7 @@ const config: Config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
-    experimental_faster: true
+    experimental_faster: true,
   },
 
   // Set the production url of your site here
@@ -54,11 +54,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: [
-            './src/css/custom.css',
-            // 'node_modules/koval-ui/dist/index.css',
-            // 'node_modules/@fontsource-variable/rubik/index.css',
-          ],
+          customCss: ['./src/css/custom.css'],
         },
         gtag: {
           trackingID: 'G-EGZMC25BG3',
