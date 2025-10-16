@@ -30,6 +30,16 @@ const config: Config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://cdn.jsdelivr.net",
+      },
+    },
+  ],
+
   themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
@@ -56,7 +66,7 @@ const config: Config = {
           customCss: [
             './src/css/custom.css',
             'node_modules/koval-ui/dist/index.css',
-            'node_modules/@fontsource-variable/rubik/index.css',
+            // 'node_modules/@fontsource-variable/rubik/index.css',
           ],
         },
         gtag: {
