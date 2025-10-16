@@ -53,7 +53,11 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: ['./src/css/custom.css', 'node_modules/koval-ui/dist/index.css'],
+          customCss: [
+            './src/css/custom.css',
+            'node_modules/koval-ui/dist/index.css',
+            'node_modules/@fontsource-variable/rubik/index.css',
+          ],
         },
         gtag: {
           trackingID: 'G-EGZMC25BG3',
@@ -64,10 +68,10 @@ const config: Config = {
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
-          createSitemapItems: async (params) => {
+          createSitemapItems: async params => {
             const {defaultCreateSitemapItems, ...rest} = params;
             const items = await defaultCreateSitemapItems(rest);
-            return items.filter((item) => !item.url.includes('/page/'));
+            return items.filter(item => !item.url.includes('/page/'));
           },
         },
       } satisfies Preset.Options,
@@ -198,7 +202,6 @@ const config: Config = {
 
       // Optional: whether you want to use the new Ask AI feature (undefined by default)
       // askAi: 'YOUR_ALGOLIA_ASK_AI_ASSISTANT_ID',
-
     },
   } satisfies Preset.ThemeConfig,
 };
