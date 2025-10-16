@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.9.1",
+    "@docusaurus/faster": "3.9.1",
     "@docusaurus/preset-classic": "3.9.1",
     "@docusaurus/remark-plugin-npm2yarn": "3.9.1",
     "@docusaurus/theme-classic": "3.9.1",
@@ -60,6 +61,7 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@swc/core",
       "core-js",
       "core-js-pure"
     ]
