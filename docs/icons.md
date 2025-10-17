@@ -2,21 +2,20 @@
 sidebar_position: 7
 ---
 
-# Prefix and suffix icons
-
-[Button](https://morewings.github.io/koval-ui/?path=/docs/components-button--docs) and [various input components](https://koval.support/inputs/inputs) support `prefix` and `suffix` props, which can be used to extend your component with icon.
-
-Koval UI expects prefix React component which is compatible with `SVGProps<SVGSVGElement>` type.
-SVG style has to support [currentColor](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword) keyword.
+# Use icons
 
 :::info[Info]
-
-Most React icon libraries support this format. Check for example:
+Most React icon libraries support this format. Check, for example,
 [react-icons](https://www.npmjs.com/package/react-icons),
 [phosphor-icons](https://github.com/phosphor-icons/react),
 [heroicons](https://heroicons.com/) etc.
-
 :::
+
+Koval UI supports of external icons. When some component in the library exposes `icon` (`prefixIcon`, `suffixIcon`) it expects a React component which is compatible with `SVGProps<SVGSVGElement>` type. SVG CSS style has to support [currentColor](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentcolor_keyword) keyword.
+
+## Prefix and suffix icons
+
+[Button](https://morewings.github.io/koval-ui/?path=/docs/components-button--docs) and [various input components](https://koval.support/inputs/inputs) support `prefix` and `suffix` props, which can be used to extend your component with icon.
 
 ## `Button` with prefix and suffix icons
 

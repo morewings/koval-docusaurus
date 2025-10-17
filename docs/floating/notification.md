@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Notification
 
 Notification is the least intrusive component from the group. It uses browser [Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to show user system notification.
@@ -93,9 +97,9 @@ Indicates that a notification should remain active until the user clicks or dism
 
 ## `useNotificationState` hook interface
 
-`useNotificationState` works anywhere in the application. So developers can invoke it anywhere in the application, e.g., put `Notification` in the other component.
+`useNotificationState` uses _Koval Global Context_, so it works anywhere in the application. Developers can put `Notification` in the other component.
 
-Hook expects a developer to provide unique `id` of Notification as a parameter.
+Hook expects a developer to provide unique `id` of `Notification` as a parameter.
 
 ### `openNotification`
 
@@ -133,8 +137,14 @@ Current visibility of notification
 
 Indicates the current permission granted by the user for the current origin to display web notifications.
 
+- `default`: The user decision is unknown. E.g. first visit.
+- `granted`: The user has explicitly granted permission for the current origin.
+- `denied`: The user has explicitly denied permission for the current origin.
+
 [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission_static)
+
+
 
 ## Handling permissions
 
-Browsers allow users to disable system notifications globally or for specific URL. In such case `Notification` component will emit `onDenied` callback and `permission` value received from the hook will be `denied`. You can fall back to using [Toast](/docs/floating/toast) component in such case.
+Browsers allow users to disable system notifications globally or for specific URL. ≈`Notification` component will emit `onDenied` callback and `permission` value received from the hook will be `denied`. You can fall back to using [Toast](/docs/floating/toast).
