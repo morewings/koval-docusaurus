@@ -12,17 +12,55 @@ sidebar_position: 3
 //import {useToastState, Toast, ButtonGroup, Button} from 'koval-ui';
 
 function Example(props) {
-  const toastId = 'foo';
-
-  const {openToast, closeToast} = useToastState(toastId);
+  const [isOpen, setOpen] = useState(false);
+  const handleClick = useCallback(() => {
+    setOpen(!isOpen);
+  }, [isOpen]);
+  const handleToggle = useCallback(
+    openState => {
+      setOpen(openState);
+    },
+    [setOpen]
+  );
   return (
-    <Fragment>
-      <ButtonGroup>
-        <Button onClick={openToast}>Open toast</Button>
-        <Button onClick={closeToast}>Close toast</Button>
-      </ButtonGroup>
-      <Toast id={toastId} title="Hello, world!" body="This is Toast example." />
-    </Fragment>
+    <Tooltip
+      isOpen={isOpen}
+      onToggle={handleToggle}
+      content={<P>This is tooltip example.</P>}>
+      <Button onClick={handleClick}>Toggle Tooltip</Button>
+    </Tooltip>
   );
 }
 ```
+
+## Props
+
+### `isOpen`
+
+type: `boolean`
+
+Control visibility of `Tooltip`
+
+### `content`
+
+type: `ReactNode`
+
+Provide `Tooltip` content
+
+### `referenceClassName`
+
+type: `string`
+
+Set the class name of the reference component wrapper
+
+### `placement`
+
+type: `'top' | 'bottom' | 'left' | 'right'| ...`
+
+Define recommended placement for `Tooltip` content, applied when possible
+
+### `onToggle`
+
+type: `(openState: boolean) => void`
+
+Provide callback for open/close events

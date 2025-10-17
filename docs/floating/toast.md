@@ -147,10 +147,10 @@ function Example(props) {
         <Button onClick={openError}>Open error toast</Button>
         <Button onClick={openWarning}>Open warning toast</Button>
       </ButtonGroup>
-      <Toast id="foo" title="This default toast" variant="default" />
-      <Toast id="bar" title="This success toast" variant="success" />
-      <Toast id="bazz" title="This error toast" variant="error" />
-      <Toast id="buzz" title="This warning toast" variant="warning" />
+      <Toast id="foo" title="This is default toast" variant="default" />
+      <Toast id="bar" title="This is success toast" variant="success" />
+      <Toast id="bazz" title="This is error toast" variant="error" />
+      <Toast id="buzz" title="This is warning toast" variant="warning" />
     </Fragment>
   );
 }
@@ -159,7 +159,7 @@ function Example(props) {
 ## Self-closing example
 
 ```jsx live
-//import {useToastState, Toast, ButtonGroup, Button} from 'koval-ui';
+//import {useToastState, Toast, Button} from 'koval-ui';
 
 function Example(props) {
   const toastId = 'foo';
@@ -167,9 +167,7 @@ function Example(props) {
   const {openToast, closeToast} = useToastState(toastId);
   return (
     <Fragment>
-      <ButtonGroup>
-        <Button onClick={openToast}>Open self-closing toast</Button>
-      </ButtonGroup>
+      <Button onClick={openToast}>Open self-closing toast</Button>
       <Toast
         id={toastId}
         title="Capre diem!"
