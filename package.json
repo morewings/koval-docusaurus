@@ -17,13 +17,13 @@
     "pretty": "prettier ./src/ ./docs/ --check"
   },
   "dependencies": {
-    "@docusaurus/core": "3.9.1",
-    "@docusaurus/faster": "3.9.1",
-    "@docusaurus/preset-classic": "3.9.1",
-    "@docusaurus/remark-plugin-npm2yarn": "3.9.1",
-    "@docusaurus/theme-classic": "3.9.1",
-    "@docusaurus/theme-common": "3.9.1",
-    "@docusaurus/theme-live-codeblock": "3.9.1",
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/faster": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
+    "@docusaurus/remark-plugin-npm2yarn": "3.9.2",
+    "@docusaurus/theme-classic": "3.9.2",
+    "@docusaurus/theme-common": "3.9.2",
+    "@docusaurus/theme-live-codeblock": "3.9.2",
     "@mdx-js/react": "3.1.1",
     "@phosphor-icons/react": "2.1.10",
     "alias-kitchen": "0.2.3",
@@ -36,9 +36,9 @@
     "react-live": "4.1.8"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.9.1",
-    "@docusaurus/tsconfig": "3.9.1",
-    "@docusaurus/types": "3.9.1",
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/tsconfig": "3.9.2",
+    "@docusaurus/types": "3.9.2",
     "prettier": "3.6.2",
     "typescript": "5.9.3"
   },
