@@ -3,7 +3,7 @@ sidebar_position: 6
 ---
 
 
-# Input validation
+# ⚙️ Input validation
 
 Input validation in Koval is made through **built-in validation properties** (`required`, `pattern`, `maxLength`, `minLength`, `max`, `min`) or a **validation state** (external validation result or callback function prop), which supports custom and asynchronous validation.
 

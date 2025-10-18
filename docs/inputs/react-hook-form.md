@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# React Hook Form integration
+# 🧩 React Hook Form integration
 
 :::info[Info]
 [React Hook Form](https://react-hook-form.com/) is known for its minimal re-renders and straightforward API, which makes it an excellent choice for building highly performant forms.

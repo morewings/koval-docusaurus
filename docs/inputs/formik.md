@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Formik integration
+# 🧩 Formik integration
 
 This guide explains how to manage form state and perform validation in Koval UI forms using [Formik](https://formik.org/), a popular and powerful form library for React. We'll walk through a complete example that uses Formik for state management and [Yup](https://github.com/jquense/yup) for validation.
 

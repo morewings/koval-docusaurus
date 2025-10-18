@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 
-# Input capture API
+# ⚙️ Input capture API
 
 ## Input modes
 

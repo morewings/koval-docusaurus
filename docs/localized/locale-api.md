@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Locale API
+# ⚙️ Locale API
 
 Koval formatter components support `locale` prop, which allows setting formatting according to user country standards.
 

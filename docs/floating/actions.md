@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Actions API
+# ⚙️ Actions API
 
 Some floating components (`Toast`, `Dialog`, `Menu`) are designed to be interactive, i.e., being able to accept user's input. Koval UI offers Actions API to implement this functionality.
 
