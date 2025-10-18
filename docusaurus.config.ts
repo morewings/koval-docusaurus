@@ -81,7 +81,7 @@ const config: Config = {
     announcementBar: {
       id: 'pre-release',
       content:
-        'Developer guide is currently being updated and mau not work as expected. Sorry for the inconvenience. Stay tuned.',
+        'Developer guide is currently being updated and may not work as expected. Sorry for the inconvenience. Stay tuned.',
       backgroundColor: '#fbfb49',
       textColor: '#091E42',
       isCloseable: false,
