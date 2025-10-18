@@ -9,11 +9,24 @@ The `FormField` component is designed to enhance the accessibility and usability
 
 ## Props
 
-| Prop Name  | Type      | Description                                                             |
-|------------|-----------|-------------------------------------------------------------------------|
-| `label`    | `string`  | Text label for the input field                                          |
-| `hint`     | `string`  | Optional hint text displayed below the input                            |
-| `required` | `boolean` | Indicates whether the input is required (displays asterisk after label) |
+### label
+
+type: `string` required
+
+Text label associated with the wrapped input.
+
+### hint
+
+type: `string`
+
+Hint text to be displayed below the input.
+
+### required
+
+type: `boolean`
+
+Renders * character after label indicating required input status. Also, asterisk is set automatically when required input is provided.
+
 
 ## Demo
 
