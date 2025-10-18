@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 4
 ---
 
-# Use icons
+# ⚙️ Icons API
 
 :::info[Info]
 Most React icon libraries support this format. Check, for example,

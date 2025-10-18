@@ -1,6 +1,6 @@
 {
-  "label": "Presentation components",
-  "position": 6,
+  "label": "Presentational components",
+  "position": 10,
   "link": {
     "type": "generated-index",
     "description": "This chapter contains various components created for better presentation of your content. Such as Tabs, Carousel, Skeleton etc."

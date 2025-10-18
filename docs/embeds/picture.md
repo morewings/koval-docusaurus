@@ -4,14 +4,51 @@ The `Picture` component is a powerful and flexible wrapper around the native `HT
 
 ## Props
 
-| Prop Name | Type                | Description                                                                         |
-| --------- | ------------------- | ----------------------------------------------------------------------------------- |
-| `src`     | `string`(required)  | Default image URL                                                                   |
-| `width`   | `number`            | Set default width in pixels                                                         |
-| `height`  | `number`            | Set default height in pixels                                                        |
-| `alt`     | `string`            | Alternative text for accessibility and when the image fails to load                 |
-| `sources` | `Source[]`          | Advanced configuration with multiple sources/formats                                |
-| `loading` | `auto, lazy, eager` | Control how the image is loaded - lazy loading can improve initial page performance |
+### `src`
+
+type: `string` required
+
+Provide default image url
+
+See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src)
+
+### `width`
+
+type: `number`
+
+Set default image width
+
+See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/width)
+
+### `height`
+
+type: `number`
+
+Set default image height
+
+See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/height)
+
+### `alt`
+
+type: `string`
+
+Provide alternate text to display when the image is not loaded or for use by assistive devices
+
+See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt)
+
+### `sources`
+
+type: `Source[]`
+
+Provide alternative sources configs array
+
+### `loading`
+
+type: `'auto' | 'lazy' | 'eager'`
+
+Set image loading behavior
+
+See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading)
 
 ## Single source
 

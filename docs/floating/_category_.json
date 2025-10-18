@@ -1,6 +1,6 @@
 {
   "label": "Floating components",
-  "position": 10,
+  "position": 11,
   "link": {
     "type": "generated-index",
     "description": "Floating components are rendered on top of the main content flow, thus gaining more user attention. This behaviour is useful for varios notifications, modal and navigation elements."
