@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# styled-components integration
+# 🧩 styled-components integration
 
 All Koval UI components support `className` property, and thus are compatible with **styled-components**, **Emotion CSS** or any similar styling library using this interface.
 

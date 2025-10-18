@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Create & customize theme
+# ⚙️ Create & customize theme
 
 Koval UI allows developers to customize existing themes or create completely new ones.
 
