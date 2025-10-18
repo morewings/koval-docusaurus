@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Koval UI',
   tagline:
-    'React components library which lets the browser do the work, resulting in simpler code and a more streamlined user experience.',
+    'Simplify your front end development: React components library letting the browser do the work for simpler code and a streamlined user experience.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
