@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Koval UI contains various components which allow to display dates, numbers, units, country and currency names localized and properly formatted."
+    "description": "Koval UI provides flexible API for visual theming and styling. The library is built with heavy relevance for modern CSS APIs."
   }
 }

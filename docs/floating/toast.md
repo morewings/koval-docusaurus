@@ -117,11 +117,11 @@ const handleClick = useCallback(() => {
 
 ### `isOpen`
 
-Current visibility of notification
+Current visibility of toast
 
-## Add actions
+## Configuring actions
 
-Actions are clickable elements at the bottom of the `Toast`.
+See the [Actions API](/docs/floating/actions) page
 
 ## Multiple `Toasts`
 

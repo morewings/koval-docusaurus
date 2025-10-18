@@ -137,35 +137,6 @@ function Example(props) {
 }
 ```
 
+### Configuring actions
 
-### `Action` type
-
-#### `title`
-
-type: `string`
-
-CLickable text for the `Action`.
-
-#### `icon`
-
-type: `FC<HTMLAttributes<HTMLOrSVGElement> & unknown>`
-
-Set custom icon for the `Action`
-
-#### `type`
-
-type: `'default' | 'success' | 'link' | 'danger'`
-
-Select a design for action
-
-#### `disabled`
-
-type: `boolean`
-
-Nake action unclickable
-
-#### `onClick`
-
-type: `(name: MouseEvent<HTMLButtonElement>) => void`
-
-Provide callback for clicks
+See the [Actions API](/docs/floating/actions) page
