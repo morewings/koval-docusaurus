@@ -2,7 +2,7 @@
 slug: new-chapters
 title: New chapters
 authors: [morewings]
-tags: []
+tags: [documentation]
 ---
 
 I added three new chapters to the documentation: [Locale-aware formatting](/docs/category/locale-aware-formatting), [Floating components](/docs/category/floating-components), [Media and Embeds](/docs/category/media--embeds).
