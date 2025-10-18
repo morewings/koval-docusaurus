@@ -75,6 +75,8 @@ const config: Config = {
     ],
   ],
 
+  plugins: ['vercel-analytics'],
+
   themeConfig: {
     announcementBar: {
       id: 'pre-release',

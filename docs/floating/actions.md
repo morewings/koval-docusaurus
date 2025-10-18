@@ -14,6 +14,26 @@ Some floating components (`Toast`, `Dialog`, `Menu`) are designed to be interact
 //import {useToastState, Toast, ButtonGroup, Button} from 'koval-ui';
 
 function Example(props) {
+  // Shared actions
+  const handleActionClick = useCallback(() => {
+    console.log('click');
+  }, []);
+
+  const actions = useMemo(
+    () => [
+      {title: 'Default Action', onClick: handleActionClick},
+      {title: 'Link Action', type: 'link', onClick: handleActionClick},
+      {title: 'Danger Action', type: 'danger', onClick: handleActionClick},
+      {title: 'Success Action', type: 'success', onClick: handleActionClick},
+      {title: 'With Custom Icon', icon: FlyingSaucerIcon, onClick: handleActionClick},
+      [
+        {title: 'Negative', type: 'danger', onClick: handleActionClick},
+        {title: 'Positive', type: 'success', onClick: handleActionClick},
+      ],
+    ],
+    [handleActionClick]
+  );
+
   // Toast logic
   const toastId = 'foo';
 
@@ -40,26 +60,6 @@ function Example(props) {
       setMenuOpen(openState);
     },
     [setMenuOpen]
-  );
-
-  // Shared actions
-  const handleActionClick = useCallback(() => {
-    console.log('click');
-  }, []);
-
-  const actions = useMemo(
-    () => [
-      {title: 'Default Action', onClick: handleActionClick},
-      {title: 'Link Action', type: 'link', onClick: handleActionClick},
-      {title: 'Danger Action', type: 'danger', onClick: handleActionClick},
-      {title: 'Success Action', type: 'success', onClick: handleActionClick},
-      {title: 'With Custom Icon', icon: FlyingSaucerIcon, onClick: handleActionClick},
-      [
-        {title: 'Negative', type: 'danger', onClick: handleActionClick},
-        {title: 'Positive', type: 'success', onClick: handleActionClick},
-      ],
-    ],
-    [handleActionClick]
   );
 
   return (

@@ -22,9 +22,13 @@ npm i koval-ui
 Wrap your application code with a `Provider` component at the highest possible level. Include Koval UI CSS in your bundle.
 There are three themes available at the moment: `themePodil`, `themeDnipro` and `themeDovzhenko`
 
+Import Koval CSS file to your bundle.
+
 ```tsx
 import type {FC} from 'react';
+// highlight-next-line
 import {Provider, themePodil} from 'koval-ui';
+// highlight-next-line
 import 'koval-ui/dist/index.css';
 
 const App: FC = () => {
