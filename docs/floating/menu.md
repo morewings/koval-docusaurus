@@ -6,9 +6,9 @@ sidebar_position: 4
 
 `Menu` is a floating element that displays a list of options or actions to the user.
 
-## Demo
+## Generic `Menu`
 
-### Generic `Menu`
+### Demo
 
 ```jsx live
 //import {useToastState, Toast, ButtonGroup, Button} from 'koval-ui';
@@ -27,7 +27,7 @@ function Example(props) {
 
   return (
     <Menu
-      content={<div>This is menu.</div>}
+      content={<div>This is <Em>free-form</Em> <Sup>menu</Sup> <Sub>content</Sub></div>}
       variant="bordered"
       isOpen={isOpen}
       onToggle={handleToggle}>
@@ -37,7 +37,61 @@ function Example(props) {
 }
 ```
 
-### Clickable list: `MenuActions`
+### Props
+
+#### `isOpen`
+
+type: `boolean`
+
+Control visibility of the `Menu`
+
+#### `content`
+
+type: `ReactNode`
+
+Control visibility of the `Menu`
+
+#### `referenceClassName`
+
+type: `string`
+
+Set the class name of the reference component wrapper
+
+#### `variant`
+
+type: `'bordered' | 'plain'`
+
+Select design
+
+#### `allowedPlacements`
+
+type: `Array['top' | 'bottom' | 'left' | 'right'| ...]`
+
+Define which relative positions `Menu` can be placed in
+
+#### `trapFocus`
+
+type: `boolean`
+
+Focus on the first element when open and trap focus
+
+#### `alignWidth`
+
+type: `boolean`
+
+Align Menu width with a reference element
+
+#### `onToggle`
+
+type: `(openState: boolean) => void`
+
+Provide callback for open/close events
+
+## Clickable list: `MenuActions`
+
+`MenuActions` doesn't support `content` property. You can provide `Action` config array to `actions` prop.
+
+### Demo
 
 ```jsx live
 //import {useToastState, Toast, ButtonGroup, Button} from 'koval-ui';
@@ -63,11 +117,10 @@ function Example(props) {
   const actions = useMemo(
     () => [
       {title: 'Default Action', onClick: handleActionClick},
-      {title: 'With Custom Icon', icon: FlyingSaucerIcon, onClick: handleActionClick},
       {title: 'Link Action', type: 'link', onClick: handleActionClick},
-      {title: 'Extra long name action', type: 'link', onClick: handleActionClick},
       {title: 'Danger Action', type: 'danger', onClick: handleActionClick},
       {title: 'Success Action', type: 'success', onClick: handleActionClick},
+      {title: 'With Custom Icon', icon: FlyingSaucerIcon, onClick: handleActionClick},
     ],
     []
   );
@@ -75,6 +128,7 @@ function Example(props) {
   return (
     <MenuActions
       actions={actions}
+      variant="plain"
       isOpen={isOpen}
       onToggle={handleToggle}>
       <Button onClick={handleClick}>Toggle Menu</Button>
@@ -82,3 +136,36 @@ function Example(props) {
   );
 }
 ```
+
+
+### `Action` type
+
+#### `title`
+
+type: `string`
+
+CLickable text for the `Action`.
+
+#### `icon`
+
+type: `FC<HTMLAttributes<HTMLOrSVGElement> & unknown>`
+
+Set custom icon for the `Action`
+
+#### `type`
+
+type: `'default' | 'success' | 'link' | 'danger'`
+
+Select a design for action
+
+#### `disabled`
+
+type: `boolean`
+
+Nake action unclickable
+
+#### `onClick`
+
+type: `(name: MouseEvent<HTMLButtonElement>) => void`
+
+Provide callback for clicks

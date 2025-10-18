@@ -105,7 +105,7 @@ const handleClick = useCallback(() => {
 
 ### `closeToast`
 
-Hide notification.
+Hide toast.
 
 ```js
 const {closeToast} = useToastState('foo');
