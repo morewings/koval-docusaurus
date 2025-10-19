@@ -15,7 +15,7 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "pretty": "prettier  ./src/ ./docs/ --config prettier.config.mjs  --check --write",
-    "prepare": "is-ci || husky",
+    "prepare": "husky",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
