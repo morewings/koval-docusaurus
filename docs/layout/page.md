@@ -12,23 +12,14 @@ Storybook](https://morewings.github.io/koval-ui/?path=/docs/layout-page--docs).
 ```tsx
 import {Page, Header, Content, Main, Footer} from 'koval-ui';
 
-
 <Page width="fluid">
-  <Header>
-    Header content
-  </Header>
+  <Header>Header content</Header>
   <Content>
-    <Sidebar xs={3}>
-      Sidebar content
-    </Sidebar>
-    <Main>
-      Main content
-    </Main>
+    <Sidebar xs={3}>Sidebar content</Sidebar>
+    <Main>Main content</Main>
   </Content>
-  <Footer>
-    Footer content
-  </Footer>
-</Page>
+  <Footer>Footer content</Footer>
+</Page>;
 ```
 
 ## Page layout anatomy

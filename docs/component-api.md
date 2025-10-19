@@ -17,12 +17,12 @@ A full set of **WAI-ARIA attributes** is supported. See the [full list](https://
 Description: A unique identifier for the component, useful for accessibility and styling purposes.
 
 ### `role: HTMLAttributes<HTMLElement>['role']`
+
 Set a native ARIA role attribute to define the component's semantic purpose. See [MDN documentation on ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) for available options.
 
 ### `className: string` (optional)
 
 Add custom CSS classes to style the component using your preferred styling solution (CSS Modules, Styled Components, Emotion, etc.). This enables you to create unique visual designs while maintaining accessibility best practices.
-
 
 ## data- attributes
 

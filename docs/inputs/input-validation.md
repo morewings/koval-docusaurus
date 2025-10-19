@@ -2,7 +2,6 @@
 sidebar_position: 6
 ---
 
-
 # ⚙️ Input validation
 
 Input validation in Koval is made through **built-in validation properties** (`required`, `pattern`, `maxLength`, `minLength`, `max`, `min`) or a **validation state** (external validation result or callback function prop), which supports custom and asynchronous validation.
@@ -152,12 +151,12 @@ Custom error messages can be displayed for built-in validations.
 
 ```tsx
 const validatorFn = (value: unknown, validityState: ValidityState) => {
-    if (validityState.valueMissing) {
-        return 'Please provide value for the input';
-    } else if (validityState.patternMismatch) {
-        return 'Please provide valid email';
-    }
-    return '';
+  if (validityState.valueMissing) {
+    return 'Please provide value for the input';
+  } else if (validityState.patternMismatch) {
+    return 'Please provide valid email';
+  }
+  return '';
 };
 ```
 
@@ -172,11 +171,11 @@ function Example(props) {
     switch (formState['case-selector']) {
       case 'lowercase': {
         const isLowerCase = value.toLowerCase() === value;
-        return isLowerCase ? '' : 'Only lower case allowed.'
+        return isLowerCase ? '' : 'Only lower case allowed.';
       }
       case 'uppercase': {
         const isUpperCase = value.toUpperCase() === value;
-        return isUpperCase ? '' : 'Only upper case allowed.'
+        return isUpperCase ? '' : 'Only upper case allowed.';
       }
       default:
         return '';
@@ -185,21 +184,15 @@ function Example(props) {
   return (
     <Form>
       <InputGroup name="case-selector">
-        <InputRadio
-          defaultChecked={true}
-          label="Allow uppercase"
-          value="uppercase"
-        />
-        <InputRadio
-          label="Allow lowercase"
-          value="lowercase"
-        />
+        <InputRadio defaultChecked={true} label="Allow uppercase" value="uppercase" />
+        <InputRadio label="Allow lowercase" value="lowercase" />
       </InputGroup>
       <InputText
         revalidateOnFormChange
         validation={validatorFn}
         name="text"
-        placeholder="Validated dynamically" />
+        placeholder="Validated dynamically"
+      />
       <div>
         <Button type="submit">Submit</Button>
       </div>

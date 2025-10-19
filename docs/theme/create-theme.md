@@ -35,7 +35,7 @@ The theme includes two sets of brand colors, each with a primary, dark, and ligh
 #### Main palette
 
 | Property    | Description                                                                                       |
-|-------------|---------------------------------------------------------------------------------------------------|
+| ----------- | ------------------------------------------------------------------------------------------------- |
 | **colorDo** | The main brand color. It must contrast well with both `background000` and `background600`.        |
 | **colorRe** | The darkest variant of the brand color, designed to contrast with `background000` and `colorDo`.  |
 | **colorMi** | The lightest variant of the brand color, designed to contrast with `background600` and `colorDo`. |
@@ -45,7 +45,7 @@ The theme includes two sets of brand colors, each with a primary, dark, and ligh
 This palette is used when an accented contrast with the primary brand colors is needed.
 
 | Property     | Description                                                                                       |
-|--------------|---------------------------------------------------------------------------------------------------|
+| ------------ | ------------------------------------------------------------------------------------------------- |
 | **colorFa**  | The main alternative brand color. Constrast with `background000`, `background600` and `colorDo`.  |
 | **colorSol** | The darkest variant of the alternative brand color. Contrast with `background000` and `colorFa`   |
 | **colorLa**  | The lightest variant of the alternative brand color. Contrast with `background600` and `colorFa`. |
@@ -53,7 +53,7 @@ This palette is used when an accented contrast with the primary brand colors is 
 ### Base colors
 
 | Property              | Description                                                                                       |
-|-----------------------|---------------------------------------------------------------------------------------------------|
+| --------------------- | ------------------------------------------------------------------------------------------------- |
 | **textColor**         | The default color for all text. High contrast against the white background color for readability. |
 | **background000**     | The lightest background color. Think about paper.                                                 |
 | **background100-400** | Intermediate shades for creating depth, layers, and subtle UI elements like borders.              |
@@ -65,7 +65,7 @@ This palette is used when an accented contrast with the primary brand colors is 
 These colors are used to provide contextual feedback to the user for actions, alerts, and system status. Each color must have sufficient contrast against both light (`background000`) and dark (`background600`) backgrounds.
 
 | Property         | Description                                                                            |
-|------------------|----------------------------------------------------------------------------------------|
+| ---------------- | -------------------------------------------------------------------------------------- |
 | **colorError**   | Indicates an error, failure, or dangerous action.                                      |
 | **colorWarning** | Communicates a warning that requires user attention.                                   |
 | **colorSuccess** | Shows a successful operation, confirmation, or approval.                               |

@@ -20,4 +20,3 @@ const StyledParagraph = styled(P)`
 This feature works best with [Typography](/docs/category/typography) and other basic components. It's not very capable with complex components.
 
 :::
-

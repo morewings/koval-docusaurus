@@ -27,7 +27,11 @@ function Example(props) {
 
   return (
     <Menu
-      content={<div>This is <Em>free-form</Em> <Sup>menu</Sup> <Sub>content</Sub></div>}
+      content={
+        <div>
+          This is <Em>free-form</Em> <Sup>menu</Sup> <Sub>content</Sub>
+        </div>
+      }
       variant="bordered"
       isOpen={isOpen}
       onToggle={handleToggle}>

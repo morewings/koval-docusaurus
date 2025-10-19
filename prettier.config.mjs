@@ -5,6 +5,6 @@ export default {
   jsxSingleQuote: false,
   trailingComma: 'es5',
   bracketSpacing: false,
-  jsxBracketSameLine: true,
+  bracketSameLine: true,
   arrowParens: 'avoid',
 }

@@ -1,26 +1,26 @@
 .fill {
-    align-items: center; /* center items horizontally, in this case */
-    background-image: linear-gradient(
-        45deg,
-        var(--kg-color-la) 25%,
-        var(--kg-color-mi) 25%,
-        var(--kg-color-mi) 50%,
-        var(--kg-color-la) 50%,
-        var(--kg-color-la) 75%,
-        var(--kg-color-mi) 75%,
-        var(--kg-color-mi) 100%
-    );
-    background-size: 56.57px 56.57px;
-    display: flex;
-    flex-direction: column; /* make flex direction vertical */
-    flex-grow: 1;
-    justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+  background-image: linear-gradient(
+    45deg,
+    var(--kg-color-la) 25%,
+    var(--kg-color-mi) 25%,
+    var(--kg-color-mi) 50%,
+    var(--kg-color-la) 50%,
+    var(--kg-color-la) 75%,
+    var(--kg-color-mi) 75%,
+    var(--kg-color-mi) 100%
+  );
+  background-size: 56.57px 56.57px;
+  display: flex;
+  flex-direction: column; /* make flex direction vertical */
+  flex-grow: 1;
+  justify-content: center; /* center items vertically, in this case */
 }
 
 .text {
-    background: var(--kg-background-000);
-    color: var(--kg-color-sol);
-    font-size: var(--kg-font-size-large);
-    font-weight: var(--kg-font-weight-bold);
-    padding: calc(var(--kg-size-unit) * 4);
+  background: var(--kg-background-000);
+  color: var(--kg-color-sol);
+  font-size: var(--kg-font-size-large);
+  font-weight: var(--kg-font-weight-bold);
+  padding: calc(var(--kg-size-unit) * 4);
 }

@@ -24,9 +24,7 @@ function PlaygroundLivePreview(): ReactNode {
       {() => (
         <>
           <ErrorBoundary
-            fallback={(params) => (
-              <ErrorBoundaryErrorMessageFallback {...params} />
-            )}>
+            fallback={params => <ErrorBoundaryErrorMessageFallback {...params} />}>
             <Provider>
               <LivePreview />
             </Provider>
@@ -49,7 +47,7 @@ export default function PlaygroundPreview(): ReactNode {
         </Translate>
       </PlaygroundHeader>
       <div className={styles.playgroundPreview}>
-          <PlaygroundLivePreview />
+        <PlaygroundLivePreview />
       </div>
     </>
   );

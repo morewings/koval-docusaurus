@@ -79,11 +79,9 @@ This setup ensures that your `onSubmit` function will only be called if all your
 
 ```tsx
 // Handle form successful submit
-const onSubmit = (data) => console.log(data);
+const onSubmit = data => console.log(data);
 
-return (
-  <Form onSubmit={handleSubmit(onSubmit)}>{/*...*/}</Form>
-)
+return <Form onSubmit={handleSubmit(onSubmit)}>{/*...*/}</Form>;
 ```
 
 ## Full demo

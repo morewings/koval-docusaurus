@@ -5,7 +5,7 @@ The `Picture` component is a powerful and flexible wrapper around the native `HT
 ## Props
 
 | Prop Name | Type                | Description                                                                         |
-|-----------|---------------------|-------------------------------------------------------------------------------------|
+| --------- | ------------------- | ----------------------------------------------------------------------------------- |
 | `src`     | `string`(required)  | Default image URL                                                                   |
 | `width`   | `number`            | Set default width in pixels                                                         |
 | `height`  | `number`            | Set default height in pixels                                                        |
@@ -46,7 +46,6 @@ function Example(props) {
 ### `mediaCondition`
 
 You might want to show a wide landscape image on a desktop screen but a tighter, portrait-oriented crop on a mobile device. You can achieve this using the `mediaCondition` property.
-
 
 ```jsx live
 //import {Picture} from 'koval-ui';

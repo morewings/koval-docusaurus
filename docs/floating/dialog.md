@@ -176,10 +176,14 @@ function Example(props) {
         <Button onClick={openSecond}>Open second Dialog</Button>
       </ButtonGroup>
       <Dialog id="baz" actions={actionsFirst} showCloseButton={false}>
-        <P>This is <Strong>first</Strong> Dialog.</P>
+        <P>
+          This is <Strong>first</Strong> Dialog.
+        </P>
       </Dialog>
       <Dialog id="qux" actions={actionsSecond} showCloseButton={false}>
-        <P>This is <Strong>second</Strong> Dialog.</P>
+        <P>
+          This is <Strong>second</Strong> Dialog.
+        </P>
       </Dialog>
     </Fragment>
   );

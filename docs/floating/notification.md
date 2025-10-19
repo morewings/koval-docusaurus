@@ -143,8 +143,6 @@ Indicates the current permission granted by the user for the current origin to d
 
 [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission_static)
 
-
-
 ## Handling permissions
 
 Browsers allow users to disable system notifications globally or for specific URL. ≈`Notification` component will emit `onDenied` callback and `permission` value received from the hook will be `denied`. You can fall back to using [Toast](/docs/floating/toast).

@@ -9,7 +9,7 @@ import {
   CodeIcon,
   ChecksIcon,
   LightbulbIcon,
-  FeatherIcon
+  FeatherIcon,
 } from '@phosphor-icons/react';
 
 type FeatureItem = {
@@ -24,7 +24,8 @@ const FeatureList: FeatureItem[] = [
     Icon: RocketLaunchIcon,
     description: (
       <>
-        Built with native browser APIs to minimize JavaScript overhead and keep your application's bundle size small and efficient.
+        Built with native browser APIs to minimize JavaScript overhead and keep your
+        application's bundle size small and efficient.
       </>
     ),
   },
@@ -33,7 +34,8 @@ const FeatureList: FeatureItem[] = [
     Icon: StackIcon,
     description: (
       <>
-        A rich set of components including layouts, data tables, carousels, and a full suite of form inputs.
+        A rich set of components including layouts, data tables, carousels, and a full
+        suite of form inputs.
       </>
     ),
   },
@@ -42,7 +44,8 @@ const FeatureList: FeatureItem[] = [
     Icon: CodeIcon,
     description: (
       <>
-        Full ES Modules and TypeScript support with bundled types and out-of-the-box compatibility with modern frameworks like Next.js.
+        Full ES Modules and TypeScript support with bundled types and out-of-the-box
+        compatibility with modern frameworks like Next.js.
       </>
     ),
   },
@@ -51,7 +54,8 @@ const FeatureList: FeatureItem[] = [
     Icon: ChecksIcon,
     description: (
       <>
-        Seamlessly integrates with popular libraries like react-hook-form and includes powerful built-in validation.
+        Seamlessly integrates with popular libraries like react-hook-form and includes
+        powerful built-in validation.
       </>
     ),
   },
@@ -60,7 +64,8 @@ const FeatureList: FeatureItem[] = [
     Icon: LightbulbIcon,
     description: (
       <>
-        Perfect for experimentation, AI interfaces, and rapidly building and testing new ideas.
+        Perfect for experimentation, AI interfaces, and rapidly building and testing new
+        ideas.
       </>
     ),
   },
@@ -69,7 +74,8 @@ const FeatureList: FeatureItem[] = [
     Icon: FeatherIcon,
     description: (
       <>
-        Supports tree-shaking with all modern bundlers. Makes minimal bundle footprint due to browser API reliance.
+        Supports tree-shaking with all modern bundlers. Makes minimal bundle footprint due
+        to browser API reliance.
       </>
     ),
   },

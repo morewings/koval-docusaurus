@@ -2,13 +2,12 @@
 sidebar_position: 5
 ---
 
-
 # ⚙️ Input capture API
 
 ## Input modes
 
 | Feature                | Controlled                                                                                     | Uncontrolled                                                                                                |
-|------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Value source**       | React state (passed via `value` or `checked`)                                                  | The browser’s internal DOM state (set once with `defaultValue` / `defaultChecked`)                          |
 | **Updating the value** | You must update the prop (usually inside an `onChange` handler) for the UI to reflect changes. | The input updates itself; you only read the value when needed (e.g., on submit).                            |
 | **Typical use‑case**   | Forms that need instant validation, conditional rendering, or integration with Redux/Context.  | Simple forms where you don’t need to track the value in React, or when you only care about the final value. |
@@ -66,7 +65,7 @@ This type defines the props for handling callbacks with textual input elements
 (like `InputText` and `Textarea`).
 
 | Prop Name      | Type      | Description                                                              |
-|----------------|-----------|--------------------------------------------------------------------------|
+| -------------- | --------- | ------------------------------------------------------------------------ |
 | `value`        | `string`  | Controls input value in controlled mode; component manages state         |
 | `defaultValue` | `string`  | Sets initial value in non-controlled mode; uses browser default behavior |
 | `disabled`     | `boolean` | Prevents user interaction                                                |
@@ -86,7 +85,7 @@ and this is reported value.
 This type defines the props for handling callbacks with interactive input elements.
 
 | Prop Name        | Type      | Description                                                  |
-|------------------|-----------|--------------------------------------------------------------|
+| ---------------- | --------- | ------------------------------------------------------------ |
 | `value`          | `string`  | Provides an initial value (does not control checked status)  |
 | `defaultChecked` | `boolean` | Sets the initial checked state for a non-controlled checkbox |
 | `checked`        | `boolean` | Controls the checked state of a controlled checkbox          |

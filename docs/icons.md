@@ -25,7 +25,9 @@ Koval UI supports of external icons. When some component in the library exposes 
 function Example(props) {
   return (
     <div>
-      <Button prefix={AlienIcon} suffix={FlyingSaucerIcon}>Hello, World!</Button>
+      <Button prefix={AlienIcon} suffix={FlyingSaucerIcon}>
+        Hello, World!
+      </Button>
     </div>
   );
 }
@@ -39,9 +41,7 @@ function Example(props) {
 function Example(props) {
   return (
     <div>
-      <InputText
-        prefix={AlienIcon}
-        placeholder="Hello, World!" />
+      <InputText prefix={AlienIcon} placeholder="Hello, World!" />
     </div>
   );
 }

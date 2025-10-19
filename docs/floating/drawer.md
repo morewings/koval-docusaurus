@@ -23,9 +23,7 @@ function Example(props) {
   return (
     <Fragment>
       <Button onClick={handleClick}>Toggle Drawer</Button>
-      <Drawer id={id}>
-        Drawer content.
-      </Drawer>
+      <Drawer id={id}>Drawer content.</Drawer>
     </Fragment>
   );
 }

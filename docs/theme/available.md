@@ -18,8 +18,8 @@ import type {FC} from 'react';
 import {Provider, themeDnipro, themePodil, themeDovzhenko} from 'koval-ui';
 
 export const App: FC = () => {
-    // Theme Podil is set by default.
-    return <Provider theme={themeDnipro}>{/*App code*/}</Provider>;
+  // Theme Podil is set by default.
+  return <Provider theme={themeDnipro}>{/*App code*/}</Provider>;
 };
 ```
 
@@ -64,7 +64,3 @@ src="https://morewings.github.io/koval-ui/iframe.html?globals=selectedTheme%3ADo
 width={777}
 height={666}
 />
-
-
-
-

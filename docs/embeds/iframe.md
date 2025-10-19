@@ -65,34 +65,37 @@ page](https://morewings.github.io/koval-ui/?path=/docs/components-iframe--docs).
 ### Basic Permissions
 
 #### Downloads
-* `'allow-downloads'`: Enables downloading files via `a` or `area` elements with the download attribute, including programmatic downloads initiated without user interaction.
-* `'allow-downloads-without-user-activation'`: Allows downloads to occur without requiring any user gesture (click, tap, etc.).
+
+- `'allow-downloads'`: Enables downloading files via `a` or `area` elements with the download attribute, including programmatic downloads initiated without user interaction.
+- `'allow-downloads-without-user-activation'`: Allows downloads to occur without requiring any user gesture (click, tap, etc.).
 
 #### Forms
-* `'allow-forms'`: Permits form submissions and validation processes to function normally. Without this, forms will appear but not submit data or trigger validations.
+
+- `'allow-forms'`: Permits form submissions and validation processes to function normally. Without this, forms will appear but not submit data or trigger validations.
 
 #### Modals
-* `'allow-modals'`: Enables the use of modal dialogs via `alert()`, `confirm()`, `print()` and `prompt()`. Also allows receiving `BeforeUnloadEvent` events.
+
+- `'allow-modals'`: Enables the use of modal dialogs via `alert()`, `confirm()`, `print()` and `prompt()`. Also allows receiving `BeforeUnloadEvent` events.
 
 ### Navigation Control
 
-* `'allow-orientation-lock'`: Grants permission to lock screen orientation (portrait/landscape).
-* `'allow-pointer-lock'`: Enables the Pointer Lock API for more immersive experiences.
-* `'allow-popups'`: Allows opening pop-up windows via `window.open()`, target="_blank", etc. Without this, popup attempts will silently fail.
-* `'allow-popups-to-escape-sandbox'`: Permits pop-ups to open outside the sandbox restrictions, useful for third-party content like ads linking to external sites.
+- `'allow-orientation-lock'`: Grants permission to lock screen orientation (portrait/landscape).
+- `'allow-pointer-lock'`: Enables the Pointer Lock API for more immersive experiences.
+- `'allow-popups'`: Allows opening pop-up windows via `window.open()`, target="\_blank", etc. Without this, popup attempts will silently fail.
+- `'allow-popups-to-escape-sandbox'`: Permits pop-ups to open outside the sandbox restrictions, useful for third-party content like ads linking to external sites.
 
 ### Security Features
 
-* `'allow-same-origin'`: If omitted, the resource is treated as cross-origin by default (more secure). Including this allows access to same-domain resources.
-* `'allow-scripts'`: Enables JavaScript execution within the iframe (required for interactive content). Without this, scripts will be blocked.
-* `'allow-storage-access-by-user-activation'`: Allows requesting access to unpartitioned cookies via the Storage Access API after user interaction.
+- `'allow-same-origin'`: If omitted, the resource is treated as cross-origin by default (more secure). Including this allows access to same-domain resources.
+- `'allow-scripts'`: Enables JavaScript execution within the iframe (required for interactive content). Without this, scripts will be blocked.
+- `'allow-storage-access-by-user-activation'`: Allows requesting access to unpartitioned cookies via the Storage Access API after user interaction.
 
 ### Advanced Options
 
-* `'allow-presentation'`: Grants control over whether the iframe can initiate presentation sessions (like slideshows).
-* `'allow-top-navigation'`: Permits navigating the top-level browsing context (the main browser tab/window). Use with caution as this weakens security.
-* `'allow-top-navigation-by-user-activation'`: Allows navigation to the top level only when initiated by a user action (more secure than full `allow-top-navigation`).
-* `'allow-top-navigation-to-custom-protocols'`: Enables navigating to non-HTTP protocols registered with the browser.
+- `'allow-presentation'`: Grants control over whether the iframe can initiate presentation sessions (like slideshows).
+- `'allow-top-navigation'`: Permits navigating the top-level browsing context (the main browser tab/window). Use with caution as this weakens security.
+- `'allow-top-navigation-by-user-activation'`: Allows navigation to the top level only when initiated by a user action (more secure than full `allow-top-navigation`).
+- `'allow-top-navigation-to-custom-protocols'`: Enables navigating to non-HTTP protocols registered with the browser.
 
 ## `allow` permissions
 
@@ -104,8 +107,7 @@ We're extending on top of default `allow` attribute which expects configuration 
 
 ```html
 <iframe
-  allow="geolocation 'self' https://a.example.com https://b.example.com; accelerometer *"
-></iframe>
+  allow="geolocation 'self' https://a.example.com https://b.example.com; accelerometer *"></iframe>
 ```
 
 ### Koval config
@@ -136,5 +138,5 @@ export type PermissionsConfig = {
 Also, it is possible to set permissions as a boolean variable. It is an equivalent for `<iframe allow="accelerometer" />`.
 
 ```tsx
-<Iframe permissionsConfig={{ accelerometer: true }} />
+<Iframe permissionsConfig={{accelerometer: true}} />
 ```

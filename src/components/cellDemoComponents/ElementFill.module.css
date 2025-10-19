@@ -1,19 +1,19 @@
 .fill {
-    --color: var(--kg-color-do);
+  --color: var(--kg-color-do);
 
-    align-items: center; /* center items horizontally, in this case */
-    background: color-mix(in srgb, var(--color) 20%, transparent);
-    border: var(--kg-border-width-200) dashed var(--color);
-    display: flex;
-    flex-direction: column; /* make flex direction vertical */
-    flex-grow: 1;
-    justify-content: center; /* center items vertically, in this case */
-    margin: calc(var(--kg-size-unit) / 2);
-    padding: calc(var(--kg-size-unit) * 3) 0;
+  align-items: center; /* center items horizontally, in this case */
+  background: color-mix(in srgb, var(--color) 20%, transparent);
+  border: var(--kg-border-width-200) dashed var(--color);
+  display: flex;
+  flex-direction: column; /* make flex direction vertical */
+  flex-grow: 1;
+  justify-content: center; /* center items vertically, in this case */
+  margin: calc(var(--kg-size-unit) / 2);
+  padding: calc(var(--kg-size-unit) * 3) 0;
 }
 
 .text {
-    color: var(--color);
-    font-size: var(--kg-font-size-large);
-    font-weight: var(--kg-font-weight-bold);
+  color: var(--color);
+  font-size: var(--kg-font-size-large);
+  font-weight: var(--kg-font-weight-bold);
 }

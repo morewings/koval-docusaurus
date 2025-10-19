@@ -39,12 +39,12 @@ function Example(props) {
 ## Props
 
 | Prop Name                | Type                         | Description                                           |
-|--------------------------|------------------------------|-------------------------------------------------------|
+| ------------------------ | ---------------------------- | ----------------------------------------------------- |
 | `width`                  | `number                      | Set the width of the video player                     |
 | `height`                 | `number`                     | Set the height of the video player                    |
 | `poster`                 | `string`                     | URL for an image to display while the video downloads |
 | `loop`                   | `boolean`                    | Enable looping back to the start when finished        |
-| `muted`                  | `boolean`           s        | Silence audio during playback                         |
+| `muted`                  | `boolean` s                  | Silence audio during playback                         |
 | `preload`                | `'none', 'metadata', 'auto'` | Select loading mode                                   |
 | `autoPlay`               | `boolean`                    | Start playing automatically when loaded               |
 | `enablePictureInPicture` | `boolean`                    | Enable Picture-in-picture mode                        |

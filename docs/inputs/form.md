@@ -39,19 +39,19 @@ function Example(props) {
   const handleSubmit = useCallback((event, formState) => {
     console.log('Submit event', event);
     console.log('formState', formState);
-  }, [])
+  }, []);
   const handleInvalid = useCallback((event, formState) => {
     console.log('Invalid event', event);
     console.log('formState', formState);
-  }, [])
+  }, []);
   const handleReset = useCallback((event, formState) => {
     console.log('Reset event', event);
     console.log('formState', formState);
-  }, [])
+  }, []);
   const handleChange = useCallback((event, formState) => {
     console.log('Change event', event);
     console.log('formState', formState);
-  }, [])
+  }, []);
 
   return (
     <Form
@@ -59,8 +59,7 @@ function Example(props) {
       onInvalid={handleInvalid}
       onReset={handleReset}
       onChange={handleChange}>
-      <FormField
-        label="Field label">
+      <FormField label="Field label">
         <InputText name="text" placeholder="Example input" />
       </FormField>
       <div>

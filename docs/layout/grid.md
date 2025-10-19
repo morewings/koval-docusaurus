@@ -103,49 +103,43 @@ Developers can define the **number of columns** using the `base` prop, with reco
 
 ```jsx live
 function Example(props) {
-  return (
-    [
-      (
-        <Grid width={666} base={12}>
-          <Row>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-          </Row>
-        </Grid>
-      ),
-      (
-        <Grid width={666} base={24}>
-          <Row>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell size: 4</Cell>
-            </Col>
-          </Row>
-        </Grid>
-      ),
-    ]
-  );
+  return [
+    <Grid width={666} base={12}>
+      <Row>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+      </Row>
+    </Grid>,
+    <Grid width={666} base={24}>
+      <Row>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell size: 4</Cell>
+        </Col>
+      </Row>
+    </Grid>,
+  ];
 }
 ```
 
@@ -155,40 +149,34 @@ The `gap` prop allows control over the width between columns.
 
 ```jsx live
 function Example(props) {
-  return (
-    [
-      (
-        <Grid width={666} gap={12}>
-          <Row>
-            <Col xs={4}>
-              <Cell>Cell</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell</Cell>
-            </Col>
-          </Row>
-        </Grid>
-      ),
-      (
-        <Grid width={666} gap={24}>
-          <Row>
-            <Col xs={4}>
-              <Cell>Cell</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell</Cell>
-            </Col>
-            <Col xs={4}>
-              <Cell>Cell</Cell>
-            </Col>
-          </Row>
-        </Grid>
-      ),
-    ]
-  );
+  return [
+    <Grid width={666} gap={12}>
+      <Row>
+        <Col xs={4}>
+          <Cell>Cell</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell</Cell>
+        </Col>
+      </Row>
+    </Grid>,
+    <Grid width={666} gap={24}>
+      <Row>
+        <Col xs={4}>
+          <Cell>Cell</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell</Cell>
+        </Col>
+        <Col xs={4}>
+          <Cell>Cell</Cell>
+        </Col>
+      </Row>
+    </Grid>,
+  ];
 }
 ```
 
@@ -267,7 +255,6 @@ function Example(props) {
 }
 ```
 
-
 ## Breakpoint values
 
 Breakpoints are applied from smallest to biggest, so the biggest one has the preference.
@@ -279,4 +266,3 @@ Breakpoints are applied from smallest to biggest, so the biggest one has the pre
 | MD   | width >= 1024px |     Medium screens (e.g., tablets, small laptops)      |
 | LG   | width >= 1440px |             Large screens (e.g., desktops)             |
 | XL   | width >= 1920px | Extra large screens (e.g., large desktops, TV screens) |
-

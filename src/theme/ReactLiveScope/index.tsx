@@ -1,7 +1,7 @@
 import React from 'react';
 import * as kovalComponents from 'koval-ui';
 import {AlienIcon, IconProps, FlyingSaucerIcon} from '@phosphor-icons/react';
-import * as cellDemoComponents from './../../components/cellDemoComponents'
+import * as cellDemoComponents from './../../components/cellDemoComponents';
 
 // Add react-live imports you need here
 const ReactLiveScope: unknown = {

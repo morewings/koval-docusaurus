@@ -129,5 +129,5 @@ const actions = [
     {title: 'Negative', type: 'danger', onClick: handleActionClick},
     {title: 'Positive', type: 'success', onClick: handleActionClick},
   ],
-]
+];
 ```

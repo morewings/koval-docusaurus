@@ -1,12 +1,12 @@
 .cell {
-    align-items: center;
-    background: var(--kg-color-re);
-    border-radius: var(--kg-border-radius-300);
-    color: var(--kg-background-000);
-    display: flex;
-    flex-direction: column;
-    height: 64px;
-    justify-content: center;
-    margin-bottom: 24px;
-    width: 100%;
+  align-items: center;
+  background: var(--kg-color-re);
+  border-radius: var(--kg-border-radius-300);
+  color: var(--kg-background-000);
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 100%;
 }

@@ -18,9 +18,7 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/quickstart">
+          <Link className="button button--secondary button--lg" to="/docs/quickstart">
             📚&ensp;Read library docs
           </Link>
         </div>
@@ -32,9 +30,7 @@ function HomepageHeader() {
 export default function Home(): ReactNode {
   // const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title="Developer Guide"
-      description="Koval UI: Developer guide and docs">
+    <Layout title="Developer Guide" description="Koval UI: Developer guide and docs">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

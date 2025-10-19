@@ -9,8 +9,24 @@ Koval UI provides consistent styling for various HTML inline elements, such as `
 ## Import names
 
 ```typescript
-import {A, Strong, Sup, Sub, Small, B, Mark, Ins, I, Em, Del, Kbd, Code, S} from 'koval-ui';
+import {
+  A,
+  Strong,
+  Sup,
+  Sub,
+  Small,
+  B,
+  Mark,
+  Ins,
+  I,
+  Em,
+  Del,
+  Kbd,
+  Code,
+  S,
+} from 'koval-ui';
 ```
+
 :::info[Info]
 See [Inline elements story](https://morewings.github.io/koval-ui/?path=/docs/typography-inline-elements--docs).
 :::

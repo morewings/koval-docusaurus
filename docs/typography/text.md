@@ -2,7 +2,6 @@
 sidebar_position: 3
 ---
 
-
 # `Text` component
 
 The Koval UI `Text` component is a kitchen-sink container designed to style various `HTMLElements`, including paragraphs, headers, lists, and other inline elements. This ensures a uniform look and feel across different types of content.
