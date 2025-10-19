@@ -18,7 +18,7 @@ All [design tokens specified in theme object](/docs/theme/create-theme) will be 
 
 ## `--kg-size-unit`
 
-This variable defines a lowest common size denomitator. It helps to achieve with harmony for element sizes, margins and paddings.
+This variable defines a lowest common size denomitator. It helps to achieve visual harmony for element sizes, margins and paddings.
 
 ```css
 .element {
