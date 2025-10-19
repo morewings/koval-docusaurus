@@ -39,8 +39,8 @@ importers:
         specifier: 2.1.10
         version: 2.1.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       alias-kitchen:
-        specifier: 0.2.3
-        version: 0.2.3
+        specifier: 0.2.4
+        version: 0.2.4
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2097,8 +2097,8 @@ packages:
     resolution: {integrity: sha512-a9aIL2E3Z7uYUPMCmjMFFd5MWhn+ccTubEvnMy7rOTZCB62dXBJtz0R5BZ/TPuX3R9ocBsgWuAbGWQ+Ph4Fmlg==}
     engines: {node: '>= 14.0.0'}
 
-  alias-kitchen@0.2.3:
-    resolution: {integrity: sha512-TPMJwllaKUiZKijfsH2FNjegYza8J6s2uCUyv/dJJEy3DIgjDrL71saEsp+Q5KE5gPW6OWOCavQJqcVSRga11g==}
+  alias-kitchen@0.2.4:
+    resolution: {integrity: sha512-+73I3QJ+cdIozAxYyhm82yehb45C+u+gvmEOdWexlZgqkOiPLqctEH/lznSLnCXye7Df0bXQziUAmj7tEE0mag==}
 
   ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
@@ -8582,7 +8582,7 @@ snapshots:
       '@algolia/requester-fetch': 5.40.0
       '@algolia/requester-node-http': 5.40.0
 
-  alias-kitchen@0.2.3:
+  alias-kitchen@0.2.4:
     dependencies:
       get-tsconfig: 4.12.0
 
