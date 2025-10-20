@@ -1,6 +1,6 @@
 {
   "label": "Locale-aware formatting",
-  "position": 9,
+  "position": 8,
   "link": {
     "type": "generated-index",
     "description": "Koval UI contains various components which allow to display dates, numbers, units, country and currency names localized and properly formatted."

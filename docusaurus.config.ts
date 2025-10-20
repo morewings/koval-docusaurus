@@ -78,14 +78,14 @@ const config: Config = {
   plugins: ['vercel-analytics'],
 
   themeConfig: {
-    announcementBar: {
-      id: 'pre-release',
-      content:
-        'Developer guide is currently being updated and may not work as expected. Sorry for the inconvenience. Stay tuned.',
-      backgroundColor: '#fbfb49',
-      textColor: '#091E42',
-      isCloseable: false,
-    },
+    // announcementBar: {
+    //   id: 'pre-release',
+    //   content:
+    //     'Developer guide is currently being updated and may not work as expected. Sorry for the inconvenience. Stay tuned.',
+    //   backgroundColor: '#fbfb49',
+    //   textColor: '#091E42',
+    //   isCloseable: false,
+    // },
     liveCodeBlock: {
       playgroundPosition: 'top',
     },
