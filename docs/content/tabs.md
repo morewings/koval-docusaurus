@@ -84,7 +84,7 @@ type: `string` required
 
 Set a unique name for the Tab
 
-#### `name`
+#### `icon`
 
 type: `FC<HTMLAttributes<HTMLOrSVGElement> & unknown>` required
 
