@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # ⚙️ Icons API
 
-:::info[Info]
+:::tip[Widely availabe]
 Most React icon libraries support this format. Check, for example,
 [react-icons](https://www.npmjs.com/package/react-icons),
 [phosphor-icons](https://github.com/phosphor-icons/react),
@@ -16,6 +16,10 @@ Koval UI supports of external icons. When some component in the library exposes 
 ## Prefix and suffix icons
 
 [Button](https://morewings.github.io/koval-ui/?path=/docs/components-button--docs) and [various input components](https://koval.support/inputs/inputs) support `prefix` and `suffix` props, which can be used to extend your component with icon.
+
+:::tip[icon weight]
+Set `weight="fill"` to enable this visual style in your app. 
+:::
 
 ## `Button` with prefix and suffix icons
 
