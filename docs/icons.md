@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # ⚙️ Icons API
 
-:::tip[Widely availabe]
+:::tip[Widely available]
 Most React icon libraries support this format. Check, for example,
 [react-icons](https://www.npmjs.com/package/react-icons),
 [phosphor-icons](https://github.com/phosphor-icons/react),
