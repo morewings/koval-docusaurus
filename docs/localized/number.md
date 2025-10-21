@@ -29,8 +29,6 @@ Each component applies consistent grouping separators based on the selected lang
     integer: {minimum: 3},
     fraction: {minimum: 2, maximum: 4},
   };
-  // When value is 1.23456
-  // With above config it will display as "001.23" (minimum 3 integer digits, 2-4 fraction digits)
   ```
 
 ### `notation`
@@ -142,6 +140,8 @@ function Example(props) {
 ### Number in scientific notation with 3 significant digits:
 
 ```jsx live
+// import {NumberDecimal} from 'koval-ui';
+
 function Example(props) {
   return (
     <NumberDecimal
@@ -157,6 +157,8 @@ function Example(props) {
 ### Percentage with exactly 2 decimal places:
 
 ```jsx live
+// import {NumberPercent} from 'koval-ui';
+
 function Example(props) {
   return (
     <NumberPercent
