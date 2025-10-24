@@ -22,7 +22,6 @@ function Example(props) {
   return (
     <div>
       <NameRegion countryCode="SE" locale="en-US" /> <br />
-      // Will display country name in Standard Moroccan Tamazight locale
       <NameRegion countryCode="SE" locale="zgh-Tfng-MA" /> <br />
       <NameRegion countryCode="SE" locale="ga-IE" /> <br />
       <NameRegion countryCode="SE" locale="ka-GE" /> <br />
