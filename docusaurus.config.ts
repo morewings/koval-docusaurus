@@ -75,7 +75,80 @@ const config: Config = {
     ],
   ],
 
-  plugins: ['vercel-analytics'],
+  plugins: [
+    'vercel-analytics',
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/inputs/input-validation',
+            to: '/docs/inputs/input-validation',
+          },
+          {
+            from: '/layout/grid',
+            to: '/docs/layout/grid',
+          },
+          {
+            from: '/inputs/react-hook-form',
+            to: '/docs/inputs/react-hook-form',
+          },
+          {
+            from: '/inputs/form-field',
+            to: '/docs/inputs/form-field',
+          },
+          {
+            from: '/inputs/inputs',
+            to: '/docs/inputs/',
+          },
+          {
+            from: '/typography/text',
+            to: '/docs/typography/text',
+          },
+          {
+            from: '/inputs/input-group',
+            to: '/docs/inputs/input-group',
+          },
+          {
+            from: '/typography/date',
+            to: '/docs/localized/date',
+          },
+          {
+            from: '/iframe',
+            to: '/docs/embeds/iframe',
+          },
+          {
+            from: '/typography/components',
+            to: '/docs/typography/components',
+          },
+          {
+            from: '/typography/number',
+            to: '/docs/localized/number',
+          },
+          {
+            from: '/theme',
+            to: '/docs/category/theme--style',
+          },
+          {
+            from: '/icons',
+            to: '/docs/icons',
+          },
+          {
+            from: '/inputs/formik',
+            to: '/docs/inputs/formik',
+          },
+          {
+            from: '/layout/page',
+            to: '/docs/layout/page',
+          },
+          {
+            from: '/inputs/input-capture',
+            to: '/docs/inputs/input-capture',
+          },
+        ],
+      },
+    ],
+  ],
 
   themeConfig: {
     // announcementBar: {
