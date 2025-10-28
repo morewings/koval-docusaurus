@@ -15,7 +15,7 @@ Notifications are managed globally via `useNotificationState` hook. So developer
 ## Demo
 
 :::warning[iOS Safari]
-Notifications API works differently in iOS Safari (and other browsers). They allow notifications only for _progressive web applications_. So you need to click **Add to home screen** and open the page from here to enable notifications.
+Notifications API works differently in iOS Safari (and other browsers). They allow notifications only for _progressive web applications_ installed to Home screen. 
 :::
 
 ```jsx live
