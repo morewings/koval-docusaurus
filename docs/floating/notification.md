@@ -18,6 +18,10 @@ Notifications are managed globally via `useNotificationState` hook. So developer
 Notifications API works differently in iOS Safari (and other browsers). They allow notifications only for _progressive web applications_ installed to Home screen. 
 :::
 
+:::warning[Android OS]
+Modern Android browsers require notifications to be emitted from Service workers only. Developers can consider using [Toast](/docs/floating/toast) as an alternative.
+:::
+
 ```jsx live
 //import {useNotificationState, Notification, ButtonGroup, Button} from 'koval-ui';
 
