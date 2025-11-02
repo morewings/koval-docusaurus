@@ -53,6 +53,8 @@ See [Paragraph story](https://morewings.github.io/koval-ui/?path=/docs/typograph
 
 Koval UI supports six header sizes, from `H1` to `H6`, allowing for flexible and consistent heading structures.
 
+Developer can set optional `anchor` property to display anchor near header.
+
 :::info[Info]
 See [Headers story](https://morewings.github.io/koval-ui/iframe.html?args=&id=typography-header--primary&viewMode=story).
 :::
@@ -64,12 +66,12 @@ See [Headers story](https://morewings.github.io/koval-ui/iframe.html?args=&id=ty
 function Example(props) {
   return (
     <>
-      <H1>Header 1</H1>
-      <H2>Header 2</H2>
-      <H3>Header 3</H3>
-      <H4>Header 4</H4>
-      <H5>Header 5</H5>
-      <H6>Header 6</H6>
+      <H1 anchor="header-1">Header 1</H1>
+      <H2 anchor="header-2">Header 2</H2>
+      <H3 anchor="header-3">Header 3</H3>
+      <H4 anchor="header-4">Header 4</H4>
+      <H5 anchor="header-5">Header 5</H5>
+      <H6 anchor="header-6">Header 6</H6>
     </>
   );
 }

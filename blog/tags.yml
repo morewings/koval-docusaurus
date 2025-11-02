@@ -17,3 +17,13 @@ documentation:
   label: Documentation
   permalink: /documentation
   description: Updates regarding new documentation added
+
+release:
+  label: Release
+  permalink: /release
+  description: Updates regarding new releases
+
+component:
+  label: Component
+  permalink: /component
+  description: Information about Koval UI components
