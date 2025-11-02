@@ -51,8 +51,8 @@ importers:
         specifier: 0.8.3
         version: 0.8.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       koval-ui:
-        specifier: 0.20.0
-        version: 0.20.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 0.20.1
+        version: 0.20.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       prism-react-renderer:
         specifier: 2.4.1
         version: 2.4.1(react@19.2.0)
@@ -3652,8 +3652,8 @@ packages:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
 
-  koval-ui@0.20.0:
-    resolution: {integrity: sha512-fhsGjmrtTnlfVqHgmLmbpyStzoCjGAhfj58Dil8Va9HDMVhSRTmjK3GU6HC4aIEzKsQsHzLIiErDkGsoonc6iA==}
+  koval-ui@0.20.1:
+    resolution: {integrity: sha512-AhvWA8JOAZYkTAcQGiVl+eBvWfzBaJYugopRXIiPrC6kGLGv0uI7RVJAgTH3f4lUP558HfA1yXrbxB7dsxUS/w==}
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
@@ -10357,7 +10357,7 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  koval-ui@0.20.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  koval-ui@0.20.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@floating-ui/react-dom': 2.1.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@fontsource-variable/rubik': 5.2.8
