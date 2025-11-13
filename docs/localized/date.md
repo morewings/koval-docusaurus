@@ -110,7 +110,7 @@ function Example(props) {
       second="numeric"
       hour12="false"
       timeZoneName="long"
-      enableNoWrap="true"
+      enableNoWrap={false}
       locale="en-US"
     />
   );
