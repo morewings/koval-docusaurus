@@ -32,7 +32,7 @@
     "@phosphor-icons/react": "2.1.10",
     "alias-kitchen": "0.2.4",
     "clsx": "2.1.1",
-    "css-vars-hook": "0.8.3",
+    "css-vars-hook": "0.8.4",
     "koval-ui": "0.20.4",
     "prism-react-renderer": "2.4.1",
     "react": "19.2.8",
