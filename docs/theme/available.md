@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Available themes
+# Available Themes
 
 Koval UI ships with three themes bundled: **Podil**, **Dnipro** and **Dovzhenko**.
 
@@ -11,7 +11,7 @@ You can see and try all available themes at [Koval Storybook](https://morewings.
 There is also a [dedicated theme color palette story](https://morewings.github.io/koval-ui/?path=/docs/themes--docs).
 :::
 
-## Apply theme
+## Apply Theme
 
 ```tsx
 import type {FC} from 'react';

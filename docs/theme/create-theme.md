@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# ⚙️ Create & customize theme
+# ⚙️ Create & Customize Theme
 
 Koval UI allows developers to customize existing themes or create completely new ones.
 
@@ -22,7 +22,7 @@ const theme = {
 
 The color system is built on a palette of _brand_, _background_, and _status_ colors that work together to create a visually appealing and intuitive user interface.
 
-### Brand colors
+### Brand Colors
 
 :::tip
 
@@ -32,7 +32,7 @@ _Dark_ and _light_ terms are used assuming `light` color-scheme. Use the opposit
 
 The theme includes two sets of brand colors, each with a primary, dark, and light variant. Colors are named after music notes: `Do`, `Re`, `Mi`, `Fa`, `Sol`.
 
-#### Main palette
+#### Main Palette
 
 | Property    | Description                                                                                       |
 | ----------- | ------------------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ The theme includes two sets of brand colors, each with a primary, dark, and ligh
 | **colorRe** | The darkest variant of the brand color, designed to contrast with `background000` and `colorDo`.  |
 | **colorMi** | The lightest variant of the brand color, designed to contrast with `background600` and `colorDo`. |
 
-#### Alternative palette
+#### Alternative Palette
 
 This palette is used when an accented contrast with the primary brand colors is needed.
 
@@ -50,7 +50,7 @@ This palette is used when an accented contrast with the primary brand colors is 
 | **colorSol** | The darkest variant of the alternative brand color. Contrast with `background000` and `colorFa`   |
 | **colorLa**  | The lightest variant of the alternative brand color. Contrast with `background600` and `colorFa`. |
 
-### Base colors
+### Base Colors
 
 | Property              | Description                                                                                       |
 | --------------------- | ------------------------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ This palette is used when an accented contrast with the primary brand colors is 
 | **background500**     | A strong, dark shade suitable for prominent elements like headers.                                |
 | **background600**     | The darkest level.                                                                                |
 
-### Status and action colors
+### Status and Action Colors
 
 These colors are used to provide contextual feedback to the user for actions, alerts, and system status. Each color must have sufficient contrast against both light (`background000`) and dark (`background600`) backgrounds.
 
@@ -75,13 +75,13 @@ These colors are used to provide contextual feedback to the user for actions, al
 
 The typography section defines the fonts, sizes, and weights used for all text elements, establishing a clear and readable visual hierarchy.
 
-### Font families
+### Font Families
 
 - `fontFamily`: This is the primary font family (may consist of single font) used by most components in the library. It should be selected for its readability and versatility.
 
 - `fontFamilyMonospace`: A monospaced font specifically designated for use within `code` and `pre` elements to ensure proper alignment and readability of code snippets.
 
-### Font sizes
+### Font Sizes
 
 - `fontSizeH1` to `fontSizeH6`: These properties define the font sizes for the six levels of headings, allowing for clear structural organization of content.
 
@@ -89,7 +89,7 @@ The typography section defines the fonts, sizes, and weights used for all text e
 
 - `fontSizeSmall`, `fontSizeMedium`, `fontSizeLarge`: These provide additional, arbitrary font sizes for use in various components where more granular control over text size is needed.
 
-### Font weights
+### Font Weights
 
 The font weight properties provide control over the boldness of the text, creating emphasis and distinction.
 
