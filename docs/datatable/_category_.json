@@ -1,8 +1,8 @@
 {
   "label": "Data Table",
-  "position": 6,
+  "position": 14,
   "link": {
     "type": "generated-index",
-    "description": "This chapter contains components designed to embed external content such as images, videos, audios, maps, and other web pages within your application."
+    "description": "DataTable component is a powerful, flexible, and accessible grid for displaying large amounts of tabular data. It supports virtualization for handling huge datasets seamlessly, along with pagination and customizable processing models"
   }
 }
