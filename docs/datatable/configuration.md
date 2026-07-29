@@ -98,9 +98,7 @@ function Example() {
       caption="Most Basic Table"
       tableData={data}
       columns={columns}
-      renderMode="virtual"
-      tableHeight={366}
-      selectable={true}
+      tableHeight={300}
     />
   );
 }

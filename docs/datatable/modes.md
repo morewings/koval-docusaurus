@@ -49,7 +49,8 @@ function Example() {
       columns={demoColumns}
       renderMode="paginated"
       pagination={pagination}
-      tableHeight={666}
+      tableHeight={720}
+      selectable={true}
     />
   );
 }
