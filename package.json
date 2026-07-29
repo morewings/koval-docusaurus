@@ -37,7 +37,8 @@
     "prism-react-renderer": "2.4.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "react-live": "4.1.8"
+    "react-live": "4.1.8",
+    "unique-names-generator": "4.7.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",
