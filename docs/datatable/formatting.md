@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Locales and formatting
+# Locales and formats
 
 The `DataTable` supports [Locale API](/docs/localized/locale-api) via the underlying field components.
 
