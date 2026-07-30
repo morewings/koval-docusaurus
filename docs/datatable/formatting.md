@@ -4,7 +4,11 @@ sidebar_position: 3
 
 # Locales and formats
 
-The `DataTable` supports [Locale API](/docs/localized/locale-api) via the underlying field components.
+:::info
+
+`DataTable` supports [Locale API](/docs/localized/locale-api) via the underlying field components.
+
+:::
 
 ## Working with locales
 
