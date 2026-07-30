@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Locales and formats
 
+## Working with locales
+
 :::info
 
 `DataTable` supports [Locale API](/docs/localized/locale-api) via the underlying field components.
 
 :::
-
-## Working with locales
 
 You can pass a `locale` prop to the `DataTable`. This locale string (e.g., `'en-US'`, `'de-DE'`) cascades down to all cells and overrides the browser's default locale. Dates, times, numbers, and currencies will be automatically formatted according to the specified region.
 
