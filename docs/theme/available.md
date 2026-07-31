@@ -16,6 +16,8 @@ There is also a [dedicated theme color palette story](https://morewings.github.i
 ```tsx
 import type {FC} from 'react';
 import {Provider, themeDnipro, themePodil, themeDovzhenko} from 'koval-ui';
+import '@fontsource-variable/rubik/wght.css';
+import 'koval-ui/dist/index.css';
 
 export const App: FC = () => {
   // Theme Podil is set by default.
@@ -26,6 +28,8 @@ export const App: FC = () => {
 ## Podil
 
 Default theme. Named after my favorite Kiev district.
+
+`Podil` uses `Rubik Variable font`.
 
 ### Example
 
@@ -39,7 +43,9 @@ height={666}
 
 ## Dnipro
 
-Complementary theme to Podil. Has brand and accent colors swapped.
+Complementary theme to `Podil`. Has brand and accent colors swapped.
+
+`Dnipro` uses `Rubik Variable font`.
 
 ### Example
 
@@ -53,7 +59,9 @@ height={666}
 
 ## Dovzhenko
 
-Black and white theme which may be useful for UX testing purposes. Named after Alexander Dovzhenko, a famous movie director.
+Black and white theme that may be useful for UX testing purposes. Named after Alexander Dovzhenko, a famous movie director.
+
+`Dovzhenko` uses `system-ui` font family.
 
 ### Example
 
