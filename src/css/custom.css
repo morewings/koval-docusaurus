@@ -32,3 +32,8 @@
   --ifm-color-primary-lightest: #e8e0da;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+div[class^='playgroundEditor'] {
+    max-height: 400px; /* Set your preferred max height */
+    overflow-y: auto;
+}
