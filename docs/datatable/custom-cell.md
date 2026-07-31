@@ -96,10 +96,10 @@ const customColumns: Column[] = [
 
 ### Localized Country & Flag with Custom Filter
 
-Here is a more comprehensive example that demonstrates how to render a localized country name using `Intl.DisplayNames` alongside the Koval UI `Flag` component. We also override the column's filter input to render a dropdown instead of the default text input.
+Here is a more comprehensive example that demonstrates how to render a localized country name using the Koval UI [NameRegion](/docs/localized/name#nameregion) alongside the [Flag](/docs/localized/flag) component. We also override the column's filter input to render a `Select` instead of the default text input.
 
 ```jsx live noInline
-// import { DataTable, Flag, Select } from 'koval-ui';
+// import { DataTable, Flag, Select, NameRegion } from 'koval-ui';
 
 // Custom cell to render a flag and localized country name
 function CountryCell({value, cellContext}) {
