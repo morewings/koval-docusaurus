@@ -151,13 +151,39 @@ Human-readable title for the column header.
 
 type: `string`
 
-Object path to access the value in `TableData` (e.g. `'user.name'`).
+Object path to access the value in `TableData` (e.g. `'user.name'`, `'address.city'`). Supports nested paths with dot notation.
 
 ### `accessorFn`
 
 type: `AccessorFn`
 
-Function to dynamically compute the value from the row data.
+Function to dynamically compute the value from the row data. Use when the cell value cannot be resolved with a simple path.
+
+```tsx
+const columns: Column[] = [
+  {
+    id: 'fullName',
+    name: 'Full Name',
+    accessorFn: row => `${row.firstName} ${row.lastName}`,
+  },
+];
+```
+
+### `columnType`
+
+type: `ColumnTypes`
+
+Specifies data formatting (e.g. `'text'`, `'decimal'`, `'percentage'`, `'currency'`, `'unit'`, `'date'`, `'select'`).
+
+| Type         | Description                                  |
+| ------------ | -------------------------------------------- |
+| `text`       | Plain text (default)                         |
+| `decimal`    | Formatted decimal number                     |
+| `percentage` | Formatted percentage                         |
+| `currency`   | Formatted currency with locale-aware symbols |
+| `unit`       | Formatted measurement with unit display      |
+| `date`       | Formatted date/time                          |
+| `select`     | Dropdown/select-style display                |
 
 ### `columnType`
 

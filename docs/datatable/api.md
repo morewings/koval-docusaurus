@@ -66,11 +66,11 @@ type: `(state: RowSelectionState) => void`
 
 Callback to capture row selection changes.
 
-## `enableRowSelection`
+## `selectable`
 
-type: `boolean | ((row: Row<TableRow>) => boolean)`
+type: `boolean`
 
-Function to dynamically protect specific rows from being selected. Default: `true`.
+Enable row selection with checkboxes. When `true`, a checkbox column is added and a contextual action bar appears above the table for bulk operations (edit, delete, clear selection).
 
 ## `sorting`
 
@@ -110,18 +110,30 @@ Optional locale for formatting dates and numbers.
 
 ## `caption`
 
-type: `string | ReactNode`
+type: `string`
 
-Accessible table caption.
+Accessible table caption rendered below the table body.
 
 ## `tableHeight`
 
-type: `number`
+type: `number | 'full'`
 
-Constrain the table height in pixels. Important for virtualized tables.
+Constrain the table height in pixels. Pass `'full'` to make the table fill the entire viewport height. Important for virtualized tables.
 
-## `selectable`
+## `id`
 
-type: `boolean`
+type: `string`
 
-Make rows selectable using checkboxes.
+Custom HTML `id` for the table element. If not provided, a unique ID is auto-generated. Useful for accessibility and external referencing.
+
+## `className`
+
+type: `string`
+
+Custom CSS class applied to the table element.
+
+## `children`
+
+type: `ReactNode`
+
+React children rendered alongside the table.

@@ -8,7 +8,27 @@ The `DataTable` provides robust capabilities for interacting with your data, inc
 
 ## Sorting
 
-To enable sorting on a specific column, set the `sortable` property to `true` in its configuration. By default, the table attempts to automatically guess the best sorting strategy. You can explicitly set a built-in strategy using `sortingFn` (e.g., `'text'`, `'basic'`, `'datetime'`), or provide a custom sorting function.
+To enable sorting on a specific column, set the `sortable` property to `true` in its configuration. By default, the table attempts to automatically guess the best sorting strategy. You can explicitly set a built-in strategy using `sortingFn`, or provide a custom sorting function.
+
+:::note
+
+Multi-column sorting is currently disabled. Only single-column sorting is supported.
+
+:::
+
+### Built-in Sorting Modes
+
+The `sortingFn` property accepts any of these built-in mode names:
+
+| Mode                        | Description                                 |
+| --------------------------- | ------------------------------------------- |
+| `auto`                      | Automatically detect the best strategy      |
+| `alphanumeric`              | Case-insensitive alphanumeric sort          |
+| `alphanumericCaseSensitive` | Case-sensitive alphanumeric sort            |
+| `text`                      | Case-insensitive text sort                  |
+| `textCaseSensitive`         | Case-sensitive text sort                    |
+| `datetime`                  | Sort by date/time values                    |
+| `basic`                     | Basic comparison (greater than / less than) |
 
 ```jsx
 const columns = [
@@ -39,9 +59,60 @@ const columns = [
 
 ## Filtering
 
-To allow users to filter a column, set the `filterable` property to `true`. You can configure how the filter matches values using `filterFn` (e.g., `'includesString'`, `'equalsString'`).
+To allow users to filter a column, set the `filterable` property to `true`. You can configure how the filter matches values using `filterFn`.
 
-You can also write custom filter functions. A custom `filterFn` is passed the row, the column ID, and the current filter value.
+### Built-in Filter Modes
+
+The `filterFn` property accepts any of these built-in mode names:
+
+| Mode                      | Description                            |
+| ------------------------- | -------------------------------------- |
+| `auto`                    | Automatically detect the best strategy |
+| `includesString`          | Case-insensitive substring match       |
+| `includesStringSensitive` | Case-sensitive substring match         |
+| `equalsString`            | Exact string equality                  |
+| `arrIncludes`             | Array includes the filter value        |
+| `arrIncludesAll`          | Array includes all filter values       |
+| `arrIncludesSome`         | Array includes some filter values      |
+| `equals`                  | Strict equality (`===`)                |
+| `weakEquals`              | Weak equality (`Object.is`)            |
+| `inNumberRange`           | Value falls within a numeric range     |
+
+### Custom Filter Functions
+
+The DataTable ships with two built-in custom filter functions registered under the `CustomFilterFns` enum:
+
+- **`isInDateRange`** — Filters date columns by a `[from, to]` date range. The filter value is resolved as two `Date` objects.
+- **`isInPercentRange`** — Filters percentage columns by a `[from, to]` numeric range. Cell values (stored as decimals, e.g., `0.42`) are multiplied by 100 before comparison.
+
+```tsx
+import type {Column, CustomFilterFns} from 'koval-ui';
+
+const columns: Column[] = [
+  {
+    id: 'createdAt',
+    name: 'Created',
+    accessorKey: 'createdAt',
+    columnType: 'date',
+    filterable: true,
+    filterFn: CustomFilterFns.isInDateRange,
+  },
+  {
+    id: 'growth',
+    name: 'Growth',
+    accessorKey: 'growth',
+    columnType: 'percentage',
+    filterable: true,
+    filterFn: CustomFilterFns.isInPercentRange,
+  },
+];
+```
+
+You can also write your own custom filter function. A custom `filterFn` is passed the row, the column ID, and the current filter value.
+
+### Empty State
+
+When active filters produce zero matching rows, the table displays a "No data to render" message with a **Reset all filters** button. Clicking it clears all active filters and restores the full dataset.
 
 ```jsx
 const columns = [
