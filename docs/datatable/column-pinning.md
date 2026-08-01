@@ -19,35 +19,31 @@ The pinning state is controlled via the `columnPinning` prop passed directly to 
 If you have `selectable={true}` enabled, the row selection checkbox column is automatically pinned to the far left.
 :::
 
-```jsx live
+```jsx live noInline
 // import { DataTable } from 'koval-ui';
 
+const data = generateData(10, 42);
+const columns = [
+  {id: 'firstName', name: 'firstName', accessorKey: 'firstName', size: 150},
+  {id: 'lastName', name: 'lastName', accessorKey: 'lastName', size: 150},
+  {
+    id: 'companyName',
+    name: 'companyName',
+    accessorKey: 'business.companyName',
+    size: 300,
+  },
+  {id: 'country', name: 'country', accessorKey: 'address.country', size: 250},
+  {id: 'city', name: 'city', accessorKey: 'address.city', size: 150},
+  {id: 'role', name: 'role', accessorKey: 'role', size: 150},
+];
+
+// Pin 'firstName' and 'lastName' to the left, and 'role' to the right.
+const pinningState = {
+  left: ['firstName', 'lastName'],
+  right: ['role'],
+};
+
 function Example() {
-  const data = React.useMemo(() => generateData(10, 42), []);
-
-  const columns = React.useMemo(
-    () => [
-      {id: 'firstName', name: 'First Name', accessorKey: 'firstName', size: 200},
-      {id: 'lastName', name: 'Last Name', accessorKey: 'lastName', size: 200},
-      {
-        id: 'companyName',
-        name: 'Company',
-        accessorKey: 'business.companyName',
-        size: 300,
-      },
-      {id: 'age', name: 'Age', accessorKey: 'age', size: 150},
-      {id: 'country', name: 'Country', accessorKey: 'address.country', size: 250},
-      {id: 'role', name: 'Role', accessorKey: 'role', size: 200},
-    ],
-    []
-  );
-
-  // Pin 'firstName' and 'lastName' to the left, and 'role' to the right.
-  const pinningState = {
-    left: ['firstName', 'lastName'],
-    right: ['role'],
-  };
-
   return (
     <DataTable
       tableData={data}
@@ -57,4 +53,6 @@ function Example() {
     />
   );
 }
+
+render(<Example />);
 ```

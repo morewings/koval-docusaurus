@@ -158,7 +158,7 @@ const tableColumns = [
 ];
 
 function AdvancedCustomCellExample() {
-  const [locale, setLocale] = React.useState('zgh-Tfng-MA');
+  const [locale, setLocale] = useState('zgh-Tfng-MA');
   return (
     <div style={{display: 'flex', flexDirection: 'column', gap: 18}}>
       <Select value={locale} onChange={e => setLocale(e.target.value)}>

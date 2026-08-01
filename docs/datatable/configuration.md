@@ -17,11 +17,10 @@ I.e. wrap objects with `useMemo` and functions with `useCallback`.
 :::
 
 ```jsx live
-// import React from 'react';
 // import { DataTable } from 'koval-ui';
 
 function Example() {
-  const columns = React.useMemo(
+  const columns = useMemo(
     () => [
       {
         id: 'firstName',
@@ -51,7 +50,7 @@ function Example() {
     ],
     []
   );
-  const data = React.useMemo(
+  const data = useMemo(
     () => [
       {
         firstName: 'Sidoney',

@@ -75,10 +75,10 @@ You can add a checkbox column to enable row selection by passing `selectable={tr
 // import { DataTable } from 'koval-ui';
 
 function Example() {
-  const data = React.useMemo(() => generateData(3, 42), []);
+  const data = useMemo(() => generateData(3, 42), []);
   const [selection, setSelection] = React.useState({});
 
-  const columns = React.useMemo(
+  const columns = useMemo(
     () => [
       {id: 'firstName', name: 'First Name', accessorKey: 'firstName'},
       {id: 'lastName', name: 'Last Name', accessorKey: 'firstName'},
