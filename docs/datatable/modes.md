@@ -16,7 +16,7 @@ For virtual rendering to work optimally, you usually need to supply a `tableHeig
 // import { DataTable } from 'koval-ui';
 
 function Example() {
-  const data = React.useMemo(() => generateData(1000, 123), []);
+  const data = useMemo(() => generateData(1000, 123), []);
 
   return (
     <DataTable
@@ -35,13 +35,13 @@ function Example() {
 
 The `paginated` rendering mode (`renderMode="paginated"`) divides your dataset into discrete pages. It adds a pagination control component at the bottom of the table.
 
-```tsx live
+```tsx live noInline
 // import { DataTable } from 'koval-ui';
 
-function Example() {
-  const data = React.useMemo(() => generateData(55, 42), []);
-  const pagination = React.useMemo(() => ({pageSize: 10, pageIndex: 0}), []);
+const data = generateData(10000, 42);
+const pagination = {pageSize: 10, pageIndex: 0};
 
+function Example() {
   return (
     <DataTable
       caption="Paginated Table"
@@ -54,6 +54,8 @@ function Example() {
     />
   );
 }
+
+render(<Example />);
 ```
 
 ## Processing Mode: Internal
