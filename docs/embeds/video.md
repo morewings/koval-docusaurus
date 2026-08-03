@@ -29,7 +29,7 @@ function Example(props) {
       title="Sons of AI: Koval in the Code"
       width={720}
       height={405}
-      src="/img/dub.mp4"
+      src="/img/dub.webm"
       poster="/img/video-poster.png"
     />
   );
