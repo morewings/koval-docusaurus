@@ -26,11 +26,11 @@ const sources = [
 function Example(props) {
   return (
     <Video
-      title="Big Buck Bunny"
+      title="Sons of AI: Koval in the Code"
       width={720}
       height={405}
-      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-      poster="/img/video-poster.jpg"
+      src="/img/dub.mp4"
+      poster="/img/video-poster.png"
     />
   );
 }
