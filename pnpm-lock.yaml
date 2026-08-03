@@ -54,8 +54,8 @@ importers:
         specifier: 0.8.4
         version: 0.8.4(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       koval-ui:
-        specifier: 0.22.0-beta.1
-        version: 0.22.0-beta.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: 0.22.0
+        version: 0.22.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       prism-react-renderer:
         specifier: 2.4.1
         version: 2.4.1(react@19.2.8)
@@ -3725,8 +3725,8 @@ packages:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
 
-  koval-ui@0.22.0-beta.1:
-    resolution: {integrity: sha512-yfRXt26AgSj0l/4CJZ5YAxo4ILb3SHNrlHWXgSZpfnmlUgwhLZWc2JrFrrR9y/4IQyHJpxHbpaHWzNI3vAK/3w==}
+  koval-ui@0.22.0:
+    resolution: {integrity: sha512-hONEf13wi6Js4ZEVFmhWVJ4aT7BpVtaSI0ZfI0sO7quZ4OT8qK4NAuTAcMdH3V2ILmpuuDF7RaYKBajzj5K3tw==}
     peerDependencies:
       react: '>=18.3.1'
       react-dom: '>=18.3.1'
@@ -10347,7 +10347,7 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  koval-ui@0.22.0-beta.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  koval-ui@0.22.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@floating-ui/react-dom': 2.1.9(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@material-symbols/svg-700': 0.45.9
