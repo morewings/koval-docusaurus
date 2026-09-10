@@ -36,8 +36,8 @@
     "css-vars-hook": "0.8.4",
     "koval-ui": "0.22.0-beta.1",
     "prism-react-renderer": "2.4.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "react-live": "4.1.8",
     "unique-names-generator": "4.7.1"
   },
